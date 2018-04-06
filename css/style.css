@@ -1810,10 +1810,11 @@ hr {
   height: 44.8em; }
 
 .gallery {
-  height: 670px;
+  height: 42em;
   margin: 8em 0;
   position: relative;
-  background: url(../img/gallery-bg.png) center no-repeat; }
+  background: url(../img/gallery-bg.png) top 21em center no-repeat;
+  background-size: 15.6em; }
   .gallery__item {
     position: absolute;
     padding-bottom: 25%;
