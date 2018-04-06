@@ -1,6 +1,158 @@
 extends template.jade
 
+block variables
+	- var bodyClass = 'home';
+
 block title
 	title Home
 
 block content
+	// begin .homeHead 
+	.homeHead
+		.homeHead__item.homeHead__item_static
+			a(href="static.html").homeHead__name стационарная мастерская
+			.loader.loader__first
+				.circle
+				.circle
+				.circle
+			.loader.loader__last
+				.circle
+				.circle
+				.circle
+
+		.homeHead__item.homeHead__item_mobile
+			a(href="#").homeHead__name МОБИЛЬНАЯ МАСТЕРСКАЯ
+			img(src="img/car.png")#car.homeHead_car
+
+		.homeHead__item.homeHead__item_catalog
+			a(href="#").homeHead__name Перейти в каталог
+		
+	// end .homeHead 
+	
+	// begin white__line
+	.white__line.bg__dround
+
+		.container_center
+			
+			.page__title
+				span.txt__danger Ремонт и изготовление РВД 
+				|в Москве и МО
+			
+
+			// begin infoBox 
+			.infoBox
+
+				.infoBox__text.infoBox_rotor
+					.infoBox__title О нас 
+					|Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
+					.infoBox__name Lorem Ipsum.
+
+				.infoBox__media
+					.video__wrapper
+						img(src="img/vid1.jpg", alt="").video__preview
+						.video__play
+				
+			// end infoBox 			
+		
+	// end white__line
+
+	// begin grey__line 
+	.grey__line.bg__fitting
+		
+		.container_center
+			
+			.center__title Почему именно мы?
+
+			// begin
+			.grid.grid__5.whiy__grid
+				.whiy__item
+					.whiy__img
+						img(src="img/whiy1.png", alt="")
+					|Квалифицированные мастера с большим опытом работы
+				.whiy__item
+					.whiy__img
+						img(src="img/whiy2.png", alt="")
+					|Отсрочка платежа до 30 дней
+				.whiy__item
+					.whiy__img
+						img(src="img/whiy3.png", alt="")
+					|Всегда в наличии более 3-х тысяч комплектующих и гидрокомпонентов
+				.whiy__item
+					.whiy__img
+						img(src="img/whiy4.png", alt="")
+					|Предоставляем скидки постоянным клиентам
+				.whiy__item
+					.whiy__img
+						img(src="img/whiy5.png", alt="")
+					|Бесплатный вызов по звонку
+			// end
+			
+
+	// end grey__line 
+
+	// begin white__line
+	.white__line.bg__rround
+
+		.container_center
+
+			.center__title Как мы работаем
+			
+			// begin slider 
+			.slider
+
+				// Slide 1
+				.slider__item
+
+					.infoBox
+
+						.infoBox__media.infoBox__media_img
+							img(src="img/slide.jpg", alt="")
+
+						.infoBox__text
+							.infoBox__name Виктор  Куралесов
+								span.infoBox__date 26.10.2017
+							|Сотрудничаем не первый год. Видно, как парк машин развивается — это радует. Действительно оперативный выезд, а не сами знаете, как бывает. По малейшему звонку люди выезжают. Хоть в праздники, хоть когда. Подход ваш — определенно нравится. Ну и помимо услуг по договору еще поставляют нам разные расходники, чем также нас выручают. Спасибо!
+
+						.infoBox__bottom
+							|Руководитель бурового отдела <br>Компания "РИТА" - 
+							a(href="www.rita.com.ru") www.rita.com.ru
+
+				// Slide 2
+				.slider__item
+
+					.infoBox
+
+						.infoBox__media.infoBox__media_img
+							img(src="img/slide.jpg", alt="")
+
+						.infoBox__text
+							.infoBox__name Виктор  Куралесов
+								span.infoBox__date 26.10.2017
+							|Сотрудничаем не первый год. Видно, как парк машин развивается — это радует. Действительно оперативный выезд, а не сами знаете, как бывает. По малейшему звонку люди выезжают. Хоть в праздники, хоть когда. Подход ваш — определенно нравится. Ну и помимо услуг по договору еще поставляют нам разные расходники, чем также нас выручают. Спасибо!
+
+						.infoBox__bottom
+							|Руководитель бурового отдела Компания "РИТА" - 
+							a(href="www.rita.com.ru") www.rita.com.ru
+				
+			// end slider 
+
+			hr
+
+			.page__title Наши клиенты
+
+			// begin parthners
+			.grid.grid__5.parthners
+				.parthners__item
+					img(src="img/parthners1.png", alt="")
+				.parthners__item
+					img(src="img/parthners2.png", alt="")
+				.parthners__item
+					img(src="img/parthners3.png", alt="")
+				.parthners__item
+					img(src="img/parthners4.png", alt="")
+				.parthners__item
+					img(src="img/parthners5.png", alt="")
+			// end parthners
+			
+
+

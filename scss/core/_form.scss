@@ -7,25 +7,23 @@ input[type=url],
 input[type=search],
 input[type=tel],
 input[type=number],
-input[type=datetime], 
-textarea {
+input[type=datetime] {
 	background-color: $input_bg_color;
 	border: 1px solid $input_border_color;
-	padding: 6px 15px;
+	padding: 0.85em 1em 0.85em 3.5em;
 	outline: none;
-	font-size: 16px;
-	font-weight: 300;
+	font-size: 0.9em;
+	font-weight: normal;
 	font-family: $main_font_family;
-	border-radius: 5px;
-	@include trs(0.3s);
+	border-radius: 0px;
+	transition: all .3s;
 	&:hover {
+		border: 1px solid $input_hover_border_color;
+		background-color: $input_hover_bg_color;;
 	}
 	&:focus {
-		border: 1px solid #bebebe;
-		background-color: #f6f6f6;
-		@include placeholder {
-			color: red;
-		}
+		border: 1px solid $input_focus_border_color;
+		background-color: $input_focus_bg_color;;
 	}
 	&.input_error {
 		background-color: #fff0f0;
@@ -34,6 +32,12 @@ textarea {
 	// Placeholder for input +++++++++++++++
 	@include placeholder {
 		color: $input_placeholder_color;
+		// font-style: italic;
+		font-weight: 400;
+	}
+	@media (max-width: 767px) {
+		padding: 1.05em 1em 1.05em 4.1em;
+		font-size: 1.1em;
 	}
 }
 
@@ -130,9 +134,9 @@ input[type=checkbox]:disabled:indeterminate:before {
 .btn {
 	color: $btn_default_text_color;
 	font-family: $main_font_family;
-	font-size: 16px;
-	font-weight: 300;
-	padding: 5px 15px 7px;
+	font-size: 1em;
+	font-weight: 500;
+	padding: 0.7em 1em;
 	border: none;
 	outline: none;
 	text-decoration: none;
@@ -141,18 +145,79 @@ input[type=checkbox]:disabled:indeterminate:before {
 	text-align: center;
 	max-width: 100%;
 	cursor: pointer;
-	border-radius: 5px;
-	@include trs(0.3s);
+	border-radius: 0px;
+	transition: all .3s;
+	text-decoration: none;
+	min-width: 220px;
 	&:hover {
-		background-color: lighten($btn_default_bg_color, 20%);
+		background-color: lighten($btn_default_bg_color, 6%);
+		color: $btn_default_text_color;
+		text-decoration: none;
+	}
+	&:focus,&:active {
+		background-color: darken($btn_default_bg_color, 6%);
+		color: $btn_default_text_color;
 	}
 	@each $status_el, $color_bg in $el_colors {
 		&__#{$status_el} {
 			background-color: $color_bg;
+			border-color: $color_bg;
 			color: $btn_contrast_text_color;
 			&:hover {
-				background-color: lighten($color_bg, 20%);
+				background-color: darken($color_bg, 7%);
+				color: $btn_contrast_text_color;
+			}
+			&:focus,&:active {
+				background-color: darken($color_bg, 10%);
+				color: $btn_contrast_text_color;
 			}
 		}
 	}	
+	@media (max-width: 767px) {
+		padding: 0.9em 1em;
+		font-size: 1.3em;
+	}
+}
+
+
+.form {
+	margin: 3.3em 0 6.6em;
+	&__inline {
+	}
+	&__grid {
+		> div {
+
+		}
+		.form__field {
+			width: 100%;
+		}
+		.btn {
+			width: 100%;
+		}
+	}
+	&__row {
+		
+	}
+	&__field {
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: 2.8em 100%;
+		&_name {
+			background-image: url(../img/user.png);
+		}
+		&_tel {
+			background-image: url(../img/tel.png);
+		}
+	}
+	@media (max-width: 767px) {
+		margin: 3em 0 3em;
+		&__grid {
+			> div {
+				width: 100%;
+			}
+		}
+		&__field {
+			background-size: 3.4em 100%;
+		}
+	}
 }

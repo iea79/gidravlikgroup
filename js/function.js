@@ -2,6 +2,7 @@ var TempApp = {
     lgWidth: 1200,
     mdWidth: 992,
     smWidth: 768,
+    resized: false,
     iOS: function() { return navigator.userAgent.match(/iPhone|iPad|iPod/i); },
     touchDevice: function() { return navigator.userAgent.match(/iPhone|iPad|iPod|Android|BlackBerry|Opera Mini|IEMobile/i); }
 };
@@ -71,15 +72,45 @@ $(document).ready(function() {
     // });
    	// setGridMatch($('[data-grid-match] .grid__item'));
    	gridMatch();
+   	setTimeout(function() {
+        if (!isXsWidth()) {
+            $('#car').addClass('visibleAnim animated slideInRight')
+        }
+   	}, 1000);
+
+    fontResize('body');
+    repalceHeaderItem();
+    // fontResize('.homeHead,.header');
+
+    $('.header__toggle').on('click', function() {
+        $('.header__mobile').toggleClass('open');
+    });
+
+    $('.slider').slick({
+        
+    })
+
+    if ($('#map')) {
+        ymaps.ready(init);
+    }
+
 });
 
 $(window).resize(function(event) {
+    var windowWidth = $(window).width();
+    // Запрещаем выполнение скриптов при смене только высоты вьюпорта (фикс для скролла в IOS и Android >=v.5)
+    if (TempApp.resized == windowWidth) { return; }
+    TempApp.resized = windowWidth;
+
 	checkOnResize()
 });
 
 function checkOnResize() {
    	// setGridMatch($('[data-grid-match] .grid__item'));
    	gridMatch();
+    fontResize('body');
+    repalceHeaderItem();
+    // fontResize('.homeHead,.header');
 }
 
 function gridMatch() {
@@ -102,3 +133,75 @@ function gridMatch() {
 // 	}, 100);
 // }
 
+function repalceHeaderItem() {
+    var header = $('.header')
+    var menu = $('.navbar');
+    var mobMenu = $('.header__drop');
+    var action = $('.header__action');
+    if (!isXsWidth()) {
+        menu.appendTo('.header__center');
+        action.appendTo('.header__right');
+    } else {
+        action.prependTo(mobMenu);
+        menu.prependTo(mobMenu);
+    }
+}
+
+function fontResize(el) {
+    var windowWidth = $(window).width();
+    if (!isXsWidth()) {
+    	var fontSize = windowWidth/19.05; // font-size 100% 1920x1080
+    } else {
+    	var fontSize = 60;
+    }
+    // if (windowWidth <= 1690) {
+    // 	var fontSize = windowWidth/8;
+    // }
+    // if (windowWidth <= 1280) {
+    // 	var fontSize = windowWidth/7;
+    // }
+    // if (windowWidth <= 991) {
+    // 	var fontSize = windowWidth/7;
+    // }
+    // if ($(window).height() <= 420) {
+    // 	var fontSize = windowWidth/9;
+    // }
+	$(el).css('fontSize', fontSize + '%');
+}
+
+
+// var placemark = {
+//     iconLayout: 'default#image',
+//     iconImageHref: 'img/marker.png',
+//     iconImageSize: [48, 76],
+//     iconImageOffset: [-24, -38],
+// };
+
+function init() {
+    var myMap = new ymaps.Map("map", {
+            center: [55.76, 37.64],
+            zoom: 9
+        }, {
+            searchControlProvider: 'yandex#search',
+        });
+
+    myMap.behaviors.disable('scrollZoom');
+
+    myMap.geoObjects
+        .add(new ymaps.Placemark([55.961228068788635,37.53616699999996], {
+            balloonContent: 'Россия, МО, городской округ Мытищи, деревня Грибки, ул. Складская, д. 5, павильон 28',
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [48, 76],
+            iconImageOffset: [-24, -48],
+        }))
+        .add(new ymaps.Placemark([55.57271429234571,37.6186468756714], {
+            balloonContent: 'Россия, Москва, МКАД, 32-й километр, внешняя сторона, с1, АГМ «ТРАКТ», бокс 22'
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [48, 76],
+            iconImageOffset: [-24, -48],
+        }));
+}
