@@ -514,6 +514,11 @@ $duration: 2s;
 					bottom: 1.7em;
 				}
 			}
+			.homeHead__sub {
+				font-size: 1em;
+				bottom: 1.7em;
+				left: 4.6em;
+			}
 		}
 		&_mech {
 			position: relative;
@@ -657,6 +662,9 @@ $duration: 2s;
 	    &_car {
 	    	opacity: 1;
 	    	top: 16.7%;
+	    }
+	    &__sub {
+	    	left: 15px !important;
 	    }
 	}
 }
@@ -1196,11 +1204,11 @@ $duration: 2s;
 }
 
 .gallery {
-	height: 42em;
+	padding-bottom: 60.3%;
 	margin: 8em 0;
 	position: relative;
-	background: url(../img/gallery-bg.png) top 21em center no-repeat;
-	background-size: 15.6em;
+	background: url(../img/gallery-bg.png) top 52% center no-repeat;
+	background-size: 23%;
 	&__item {
 		position: absolute;
 		padding-bottom: 25%;
@@ -1211,7 +1219,7 @@ $duration: 2s;
 			display: block;
 			max-width: none;
 			min-height: 100%;
-			min-width: 100%;
+			width: 100%;
 		}
 		&:first-child {
 			top: 0;
@@ -1260,6 +1268,14 @@ $duration: 2s;
 			right: 0;
 			width: 35.5%;
 			padding-bottom: 35.2%;
+		}
+	}
+	@media (max-width: 767px) {
+		margin: 3em 0;
+		&__item {
+			img {
+				width: 100%;
+			}
 		}
 	}
 }
