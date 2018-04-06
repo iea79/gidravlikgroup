@@ -154,28 +154,9 @@ function fontResize(el) {
     } else {
     	var fontSize = 60;
     }
-    // if (windowWidth <= 1690) {
-    // 	var fontSize = windowWidth/8;
-    // }
-    // if (windowWidth <= 1280) {
-    // 	var fontSize = windowWidth/7;
-    // }
-    // if (windowWidth <= 991) {
-    // 	var fontSize = windowWidth/7;
-    // }
-    // if ($(window).height() <= 420) {
-    // 	var fontSize = windowWidth/9;
-    // }
 	$(el).css('fontSize', fontSize + '%');
 }
 
-
-// var placemark = {
-//     iconLayout: 'default#image',
-//     iconImageHref: 'img/marker.png',
-//     iconImageSize: [48, 76],
-//     iconImageOffset: [-24, -38],
-// };
 
 function init() {
     var myMap = new ymaps.Map("map", {

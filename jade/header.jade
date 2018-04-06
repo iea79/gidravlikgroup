@@ -3,7 +3,7 @@ header.header
 
 	.header__left
 
-		a(href="#").header__logo
+		a(href="index.html").header__logo
 			img(src="img/logo.png")
 
 	.header__right
@@ -25,15 +25,9 @@ header.header
 		// begin navbar 
 
 		ul.navbar
-
-			li.navbar__item
-				a(href="#").navbar__link О нас
-			li.navbar__item
-				a(href="#").navbar__link Услуги
-			li.navbar__item
-				a(href="#").navbar__link Каталог
-			li.navbar__item
-				a(href="#").navbar__link Контакты
+			for name in menu
+				li.navbar__item
+					a(href="#").navbar__link= name
 
 		// end navbar
 

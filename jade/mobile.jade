@@ -1,0 +1,180 @@
+extends template.jade
+
+block variables
+	- var bodyClass = '';
+	- var menu = ["О нас", "Услуги", "Каталог", "Контакты", "Стационарная мастерская"];
+
+block title
+	title Мобильная мастерская
+
+block content
+	// begin .homeHead 
+	.homeHead
+		.homeHead__item.homeHead__item_grey
+			.homeHead__vertical
+				.homeHead__vertical_content.homeHead__vertical_content--right
+					.homeHead__vertical_wrap
+						.homeHead__title 
+							span.txt__danger Ремонт РВД <br>
+							|с выездом на Ваш объект
+
+						span.txt__danger #1 
+						span.txt__primary Мобильные мастерские по Москве и Московской области
+
+			.homeHead__sub Собственный парк автомобилей
+
+		.homeHead__item.homeHead__item_dark
+			.homeHead__vertical
+				.homeHead__vertical_content
+					.homeHead__vertical_wrap
+						a(href="#").btn Заказать звонок
+
+	img(src="img/car-lg.png", alt="")#car.homeHead_car--lg
+		
+	// end .homeHead 
+
+	// begin white__line
+	.white__line.bg__dround
+
+		.container_center
+			
+			// begin infoBox 
+			.infoBox.infoBox_right
+
+				.infoBox__text.infoBox_totls
+					.infoBox__title Преимущества 
+					.grid.grid__2.whiy__grid
+						.whiy__item
+							.whiy__img
+								img(src="img/whiy2.png", alt="")
+							|Работаем без выходных 24 часа 7 дней в неделю
+						.whiy__item
+							.whiy__img
+								img(src="img/whiy5.png", alt="")
+							|Бесплатный вызов по звонку
+						.whiy__item
+							.whiy__img
+								img(src="img/whiy7.png", alt="")
+							|Автопарк из 5-ти мобильных мастерских
+						.whiy__item
+							.whiy__img
+								img(src="img/whiy4.png", alt="")
+							|Предоставляем скидки постоянным клиентам
+					
+				.infoBox__bottom
+					|Мобильные мастерские — это очень удобно мы сами выезжаем к вам в течении 1-2 часов и делаем все работы по ремонту на месте 
+
+				.infoBox__media
+					.video__wrapper
+						img(src="img/vid3.jpg", alt="").video__preview
+						.video__play
+				
+			// end infoBox 	
+
+			hr
+
+			.page__title Получи скидку 
+				span.txt__danger до 20
+					b.txt__default %
+
+			.form.form__inline
+				// begin form__grid
+				.grid.grid__3.form__grid
+					.form__row
+						input(type="text" name="name" placeholder="Ваше имя").form__field.form__field_name
+					.form__row
+						input(type="tel" name="tel" placeholder="Ваш Телефон").form__field.form__field_tel
+					.form__row
+						button.btn Заказать звонок
+				// end form__grid
+
+	// end white__line
+
+	// begin white__line
+	.img__line.img__line_car
+
+		.container_center
+
+			.center__title Как мы работаем
+
+			// begin number__grid
+			.grid.grid__4.number__grid.number_notline
+				.number__item
+					.number__name Ценим ваше время
+					|Работаем без выходных и праздников с 8 до 21 ежедневно
+				.number__item
+					.number__name Удобная оплата
+					|Консультация специалиста
+				.number__item
+					.number__name Мы профессионалы
+					|Изготовление РВД в течении 10 минут
+				.number__item
+					.number__name Гарантия 2 года
+					|Гарантия 2 года
+			// end number__grid
+
+			.img__line_action
+				a(href="#").btn Оставить заявку
+
+	// begin white__line
+	.white__line.bg__rround
+
+		.container_center
+
+			.page__title Отзывы клиентов
+			
+			// begin slider 
+			.slider
+
+				// Slide 1
+				.slider__item
+
+					.infoBox
+
+						.infoBox__media.infoBox__media_img
+							img(src="img/slide.jpg", alt="")
+
+						.infoBox__text
+							.infoBox__name Виктор  Куралесов
+								span.infoBox__date 26.10.2017
+							|Сотрудничаем не первый год. Видно, как парк машин развивается — это радует. Действительно оперативный выезд, а не сами знаете, как бывает. По малейшему звонку люди выезжают. Хоть в праздники, хоть когда. Подход ваш — определенно нравится. Ну и помимо услуг по договору еще поставляют нам разные расходники, чем также нас выручают. Спасибо!
+
+						.infoBox__bottom
+							|Руководитель бурового отдела <br>Компания "РИТА" - 
+							a(href="www.rita.com.ru") www.rita.com.ru
+
+				// Slide 2
+				.slider__item
+
+					.infoBox
+
+						.infoBox__media.infoBox__media_img
+							img(src="img/slide.jpg", alt="")
+
+						.infoBox__text
+							.infoBox__name Виктор  Куралесов
+								span.infoBox__date 26.10.2017
+							|Сотрудничаем не первый год. Видно, как парк машин развивается — это радует. Действительно оперативный выезд, а не сами знаете, как бывает. По малейшему звонку люди выезжают. Хоть в праздники, хоть когда. Подход ваш — определенно нравится. Ну и помимо услуг по договору еще поставляют нам разные расходники, чем также нас выручают. Спасибо!
+
+						.infoBox__bottom
+							|Руководитель бурового отдела Компания "РИТА" - 
+							a(href="www.rita.com.ru") www.rita.com.ru
+				
+			// end slider 
+
+			hr
+
+			.page__title.page__title_notline Закажите звонок
+
+			.form.form__inline
+				// begin form__grid
+				.grid.grid__3.form__grid
+					.form__row
+						input(type="text" name="name" placeholder="Ваше имя").form__field.form__field_name
+					.form__row
+						input(type="tel" name="tel" placeholder="Ваш Телефон").form__field.form__field_tel
+					.form__row
+						button.btn Заказать звонок
+				// end form__grid
+
+			

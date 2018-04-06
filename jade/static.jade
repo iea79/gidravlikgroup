@@ -1,0 +1,221 @@
+extends template.jade
+
+block variables
+	- var bodyClass = '';
+	- var menu = ["О нас", "Услуги", "Каталог", "Контакты", "Мобильная мастерская"];
+
+block title
+	title Стационарная мастерская
+
+block content
+	// begin .homeHead 
+	.homeHead
+		.homeHead__item.homeHead__item_map
+			.homeHead__vertical
+				.homeHead__title.txt__danger Ремонт РВД
+				.txt__danger Изготовление РВД
+				|в стационарной мастерской
+			.loader.loader__first
+				.circle
+				.circle
+				.circle
+			.loader.loader__last
+				.circle
+				.circle
+				.circle
+
+		.homeHead__item.homeHead__item_mech
+			.homeHead__vertical Без выходных <br>с 8 до 21-00
+		
+	// end .homeHead 
+
+
+	// begin white__line
+	.white__line.bg__lround
+
+		.container_center
+			
+			.center__title ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ
+
+			// begin simple__grid
+			.grid.grid__3.simple__grid
+				div
+					img.simple__img(src="img/dop1.jpg", alt="")
+					.simple__item
+						.simple__item_wrap
+							.simple__name Изготовление гидравлических трубок
+				div
+					img.simple__img(src="img/dop2.jpg", alt="")
+					.simple__item
+						.simple__item_wrap
+							.simple__name Изготовление трубок ТНВД
+				div
+					img.simple__img(src="img/dop3.jpg", alt="")
+					.simple__item
+						.simple__item_wrap
+							.simple__name
+								span.txt__danger Ремонт шлангов ГУР
+				div
+					img.simple__img(src="img/dop4.jpg", alt="")
+					.simple__item
+						.simple__item_wrap
+							.simple__name Ремонт гидроцилиндров
+				div
+					img.simple__img(src="img/dop5.jpg", alt="")
+					.simple__item
+						.simple__item_wrap
+				div
+					img.simple__img(src="img/dop6.jpg", alt="")
+					.simple__item
+						.simple__item_wrap
+							.simple__name Заправка гидромолота азотом
+				div
+					img.simple__img(src="img/dop7.jpg", alt="")
+					.simple__item
+						.simple__item_wrap
+							.simple__name
+								span.txt__danger Изготовление уплотнений
+				div
+					img.simple__img(src="img/dop8.jpg", alt="")
+					.simple__item
+						.simple__item_wrap
+							.simple__name Токарные работы
+				div
+					img.simple__img(src="img/dop9.jpg", alt="")
+					.simple__item
+						.simple__item_wrap
+							.simple__name Сварочные работы
+
+			// end simple__grid
+	
+	hr
+			
+	// begin white__line
+	.white__line.bg__rround
+
+		.container_center
+
+			.page__title Получи скидку 
+				span.txt__danger до 15
+					b.txt__default %
+
+			.form.form__inline
+				// begin form__grid
+				.grid.grid__3.form__grid
+					.form__row
+						input(type="text" name="name" placeholder="Ваше имя").form__field.form__field_name
+					.form__row
+						input(type="tel" name="tel" placeholder="Ваш Телефон").form__field.form__field_tel
+					.form__row
+						button.btn Заказать звонок
+				// end form__grid
+
+			// begin gallery 
+			.gallery
+				a(href="img/gal1.jpg" data-fancybox="gallery").gallery__item
+					img(src="img/gal1.jpg", alt="")
+				a(href="img/gal2.jpg" data-fancybox="gallery").gallery__item
+					img(src="img/gal2.jpg", alt="")
+				a(href="img/gal3.jpg" data-fancybox="gallery").gallery__item
+					img(src="img/gal3.jpg", alt="")
+				a(href="img/gal3.jpg" data-fancybox="gallery").gallery__item
+					img(src="img/gal3.jpg", alt="")
+				a(href="img/gal3.jpg" data-fancybox="gallery").gallery__item
+					img(src="img/gal3.jpg", alt="")
+				a(href="img/gal3.jpg" data-fancybox="gallery").gallery__item
+					img(src="img/gal3.jpg", alt="")
+				a(href="img/gal1.jpg" data-fancybox="gallery").gallery__item
+					img(src="img/gal1.jpg", alt="")
+				a(href="img/gal3.jpg" data-fancybox="gallery").gallery__item
+					img(src="img/gal3.jpg", alt="")
+			// end gallery 
+
+
+
+	// begin white__line
+	.img__line
+
+		.container_center
+
+			.center__title Как мы работаем
+
+			// begin number__grid
+			.grid.grid__4.number__grid
+				.number__item
+					|Работаем без выходных и праздников с 8 до 21 ежедневно
+				.number__item
+					|Консультация специалиста
+				.number__item
+					|Изготовление РВД в течении 10 минут
+				.number__item
+					|Гарантия 2 года
+			// end number__grid
+			
+
+	// begin white__line
+	.white__line.bg__rround
+
+		.container_center
+
+			.page__title Отзывы клиентов
+			
+			// begin slider 
+			.slider
+
+				// Slide 1
+				.slider__item
+
+					.infoBox
+
+						.infoBox__media.infoBox__media_img
+							img(src="img/slide.jpg", alt="")
+
+						.infoBox__text
+							.infoBox__name Виктор  Куралесов
+								span.infoBox__date 26.10.2017
+							|Сотрудничаем не первый год. Видно, как парк машин развивается — это радует. Действительно оперативный выезд, а не сами знаете, как бывает. По малейшему звонку люди выезжают. Хоть в праздники, хоть когда. Подход ваш — определенно нравится. Ну и помимо услуг по договору еще поставляют нам разные расходники, чем также нас выручают. Спасибо!
+
+						.infoBox__bottom
+							|Руководитель бурового отдела <br>Компания "РИТА" - 
+							a(href="www.rita.com.ru") www.rita.com.ru
+
+				// Slide 2
+				.slider__item
+
+					.infoBox
+
+						.infoBox__media.infoBox__media_img
+							img(src="img/slide.jpg", alt="")
+
+						.infoBox__text
+							.infoBox__name Виктор  Куралесов
+								span.infoBox__date 26.10.2017
+							|Сотрудничаем не первый год. Видно, как парк машин развивается — это радует. Действительно оперативный выезд, а не сами знаете, как бывает. По малейшему звонку люди выезжают. Хоть в праздники, хоть когда. Подход ваш — определенно нравится. Ну и помимо услуг по договору еще поставляют нам разные расходники, чем также нас выручают. Спасибо!
+
+						.infoBox__bottom
+							|Руководитель бурового отдела Компания "РИТА" - 
+							a(href="www.rita.com.ru") www.rita.com.ru
+				
+			// end slider 
+
+			hr
+
+			.page__title Закажите звонок
+
+			.form.form__inline
+				// begin form__grid
+				.grid.grid__3.form__grid
+					.form__row
+						input(type="text" name="name" placeholder="Ваше имя").form__field.form__field_name
+					.form__row
+						input(type="tel" name="tel" placeholder="Ваш Телефон").form__field.form__field_tel
+					.form__row
+						button.btn Заказать звонок
+				// end form__grid
+
+
+	// begin mapBox 
+	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+	#map.mapBox
+		
+	// end mapBox 				

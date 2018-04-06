@@ -50,6 +50,9 @@
 		&__#{$status_el} {
 			color: $color_bg;
 		}
+	}
+	&__default {
+		font-family: $main_font_family;
 	}	
 }
 
@@ -456,6 +459,7 @@ $duration: 2s;
 	&__item {
 		border: none;
 		float: left;
+		position: relative;
 		// display: table-cell;
 		text-align: center;
 		padding: 14.7em 7.4em 11.2em ;
@@ -501,13 +505,13 @@ $duration: 2s;
 			.loader {
 				&__first {
 					left: auto;
-					top: 5.2em;
+					top: 4.8em;
 					right: 29.1em;
 				}
 				&__last {
 					left: auto;
 					right: 27.15em;
-					bottom: 1.9em;
+					bottom: 1.7em;
 				}
 			}
 		}
@@ -520,9 +524,64 @@ $duration: 2s;
 			padding: 19.2em 10.6em 15.3em ;
 			color: #ff0000;
 		}
+		&_grey {
+			width: 66.6%;
+			padding: 10.2em 4.2em 10.3em ;
+			background-color: #f0eff4;
+			font-size: 1.5em;
+			text-align: left;
+		}
+		&_dark {
+			width: 34.5%;
+			padding: 19.6em 4.4em 10.3em ;
+			background-color: #061115;
+			text-align: left;
+			.btn {
+				min-width: 12em;
+			}
+			.homeHead__vertical_content:before {
+				opacity: .2;
+			}
+		}
 	}
 	&__vertical {
 		text-align: left;
+		&_content {
+			position: relative;
+			display: block;
+			width: 100%;
+			@extend %clear_a;
+			&:before {
+				content: '';
+				border-top: 2px solid #ccc;
+				display: block;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				width: 16em;
+				
+			}
+			&--right {
+				.homeHead__vertical_wrap {
+					float: right;
+				}
+				&:before {
+					right: auto;
+					left: 0;
+					width: 10em;
+				}
+			}
+		}
+		&_wrap {
+			float: left;
+		}
+	}
+	&__sub {
+		position: absolute;
+		bottom: 1.2em;
+		left: 4.1em;
+		font-size: 0.7em;
+		color: #888888;
 	}
 	&__name {
 		border: 1px solid;
@@ -547,6 +606,14 @@ $duration: 2s;
 		left: 0.8em;
 		width: 96%;
 		z-index: 1;
+		&--lg {
+			opacity: 0;
+			position: absolute;
+			top: 27.2em;
+			left: 24.5%;
+			width: 58.6em;
+			z-index: 1;
+		}
 	}
 	&__title {
 		font-family: Kankin;
@@ -554,10 +621,17 @@ $duration: 2s;
 		letter-spacing: 0.08em;
 		text-transform: uppercase;
 		margin-bottom: 0.45em;
-		color: #ff0000;
 	}
 	&__vertical {
-		font-size: 1.5em;
+		// font-size: 1.5em;
+		&_content {
+			&--left {
+
+			}
+			&--right {
+
+			}
+		}
 	}
 	@media (max-width: 767px) {
 		padding-top: 40px;
@@ -571,6 +645,18 @@ $duration: 2s;
 	    		background-size: auto 100%;
 	    		background-position: right bottom;
 	    	}
+	    	&_catalog {
+	    		background-image: none;
+	    		background-color: #071015;
+	    	}
+	    	&_static {
+	    		background-size: auto 100%;
+	    		background-position: right center;
+	    	}
+	    }
+	    &_car {
+	    	opacity: 1;
+	    	top: 16.7%;
 	    }
 	}
 }
@@ -602,6 +688,13 @@ $duration: 2s;
 	background-size: cover;
 	.center__title {
 		color: #fff;
+	}
+	&_car {
+		background-image: url(../img/img-line-car.jpg);
+	}
+	&_action {
+		text-align: center;
+		margin: 3em 0 0;
 	}
 	@media (max-width: 767px) {
 		padding: 4.3em 0;
@@ -661,6 +754,11 @@ $duration: 2s;
 		height: 2px;
 		display: block;
 	}
+	&_notline {
+		&:before {
+			display: none;
+		}
+	}
 	@media (max-width: 767px) {
 	    font-size: 2.4em;
 	}
@@ -688,6 +786,12 @@ $duration: 2s;
 	// max-width: 96%;
 	&_rotor {
 		background-image: url(../img/info1.png);
+		background-position: top left;
+		background-repeat: no-repeat;
+		background-size: 23.7em;
+	}
+	&_tools {
+		background-image: url(../img/tools.png);
 		background-position: top left;
 		background-repeat: no-repeat;
 		background-size: 23.7em;
@@ -780,6 +884,50 @@ $duration: 2s;
 			&:hover {
 				text-decoration: underline;
 			}
+		}
+	}
+	&_right {
+		border-top: 0;
+		padding-bottom: 7.6em;
+		.infoBox {
+			&__text {
+				float: left;
+				background-color: #f0eff4;
+				color: #666666;
+				text-align: justify;
+				padding: 3.2em 21.8em 3.5em 3.2em;
+				width: 51.4em;
+				line-height: 1.5;
+			}
+			&__media {
+				left: auto;
+				right: 0;
+			}
+			&__title {
+				text-align: left;
+				&:before {
+					right: auto;
+				}
+			}
+			&__bottom {
+				left: .1em;
+				width: 33.3em;
+				padding-left: 1.9em;
+				padding-right: 4.9em;
+				line-height: 1.6;
+				&:before {
+					left: auto;
+					right: 0;
+					width: 3.7em;
+				}
+			}
+		}
+	}
+	.whiy__grid {
+		margin-top: 2.6em;
+		margin-bottom: -1.2em;
+		> div {
+			margin-bottom: 2.7em;
 		}
 	}
 	@media (max-width: 767px) {    
@@ -1018,6 +1166,21 @@ $duration: 2s;
 			font-family: Kankin;
 		}
 	}
+	&__name {
+		color: #fff;
+		font-weight: 500;
+		margin-bottom: 1.1em;
+	}
+	&_notline {
+		.number {
+			&__item {
+				&:after {
+					content: '';
+					display: none;
+				}
+			}
+		}
+	}
 	@media (max-width: 767px) {
 	    &__grid {
 	    	font-size: 120%;
@@ -1030,6 +1193,74 @@ $duration: 2s;
 
 .mapBox {
 	height: 44.8em;
+}
+
+.gallery {
+	height: 670px;
+	margin: 8em 0;
+	position: relative;
+	background: url(../img/dop5.lpg) center no-repeat;
+	&__item {
+		position: absolute;
+		padding-bottom: 25%;
+		overflow: hidden;
+		display: block;
+		img {
+			position: absolute;
+			display: block;
+			max-width: none;
+			min-height: 100%;
+			min-width: 100%;
+		}
+		&:first-child {
+			top: 0;
+			left: 0;
+			width: 34%;
+			padding-bottom: 34.2%;
+		}
+		&:nth-child(2) {
+			top: 0;
+			left: 35%;
+			width: 28.6%;
+			padding-bottom: 20%;
+		}
+		&:nth-child(3) {
+			top: 0;
+			right: 0;
+			width: 35.5%;
+			padding-bottom: 24.3%;
+		}
+		&:nth-child(4) {
+			bottom: 0;
+			left: 0;
+			width: 25.2%;
+			padding-bottom: 25.2%;
+		}
+		&:nth-child(5) {
+			bottom: 28.4%;
+			left: 26%;
+			width: 8.2%;
+			padding-bottom: 8%;
+		}
+		&:nth-child(6) {
+			bottom: 0%;
+			left: 26%;
+			width: 18.4%;
+			padding-bottom: 16.2%;
+		}
+		&:nth-child(7) {
+			bottom: 0%;
+			left: 45.2%;
+			width: 18.4%;
+			padding-bottom: 16.2%;
+		}
+		&:nth-child(8) {
+			bottom: 0%;
+			right: 0;
+			width: 35.5%;
+			padding-bottom: 35.2%;
+		}
+	}
 }
 
 /* Footer

@@ -1809,6 +1809,63 @@ hr {
 .mapBox {
   height: 44.8em; }
 
+.gallery {
+  height: 670px;
+  margin: 8em 0;
+  position: relative;
+  background: url(../img/dop5.lpg) center no-repeat; }
+  .gallery__item {
+    position: absolute;
+    padding-bottom: 25%;
+    overflow: hidden;
+    display: block; }
+    .gallery__item img {
+      position: absolute;
+      display: block;
+      max-width: none;
+      min-height: 100%;
+      min-width: 100%; }
+    .gallery__item:first-child {
+      top: 0;
+      left: 0;
+      width: 34%;
+      padding-bottom: 34.2%; }
+    .gallery__item:nth-child(2) {
+      top: 0;
+      left: 35%;
+      width: 28.6%;
+      padding-bottom: 20%; }
+    .gallery__item:nth-child(3) {
+      top: 0;
+      right: 0;
+      width: 35.5%;
+      padding-bottom: 24.3%; }
+    .gallery__item:nth-child(4) {
+      bottom: 0;
+      left: 0;
+      width: 25.2%;
+      padding-bottom: 25.2%; }
+    .gallery__item:nth-child(5) {
+      bottom: 28.4%;
+      left: 26%;
+      width: 8.2%;
+      padding-bottom: 8%; }
+    .gallery__item:nth-child(6) {
+      bottom: 0%;
+      left: 26%;
+      width: 18.4%;
+      padding-bottom: 16.2%; }
+    .gallery__item:nth-child(7) {
+      bottom: 0%;
+      left: 45.2%;
+      width: 18.4%;
+      padding-bottom: 16.2%; }
+    .gallery__item:nth-child(8) {
+      bottom: 0%;
+      right: 0;
+      width: 35.5%;
+      padding-bottom: 35.2%; }
+
 /* Footer
  ----------------------------------------------------------------------------- */
 .footer {
