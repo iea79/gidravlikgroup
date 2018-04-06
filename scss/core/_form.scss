@@ -193,6 +193,7 @@ input[type=checkbox]:disabled:indeterminate:before {
 		}
 		.btn {
 			width: 100%;
+			min-width: auto;
 		}
 	}
 	&__row {

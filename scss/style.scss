@@ -658,20 +658,48 @@ $duration: 2s;
 	    		background-size: auto 100%;
 	    		background-position: right center;
 	    	}
+			&_grey {
+				padding: 2.2em 1.4em 4em;
+			}
 	    }
 	    &_car {
 	    	opacity: 1;
 	    	top: 16.7%;
+	    	&--lg {
+	    		display: none;
+	    	}
 	    }
 	    &__sub {
 	    	left: 15px !important;
 	    }
+		&__vertical {
+			text-align: left;
+			&_content {
+				position: relative;
+				display: block;
+				width: 100%;
+				&:before {
+					display: none;
+				}
+				&--right {
+					.homeHead__vertical_wrap {
+						float: none;
+						text-align: left;
+					}
+				}
+			}
+			&_wrap {
+				float: none;
+				text-align: center;
+			}
+		}
 	}
 }
 
 .white__line {
 	background-color: #fff;
 	padding: 7.9em 0;
+	overflow: hidden;
 	+ hr {
 		margin: 0 auto;
 		max-width: calc(#{$container_width} - 30px);
@@ -977,6 +1005,42 @@ $duration: 2s;
 			left: 0;
 			margin-top: 12px;
 		}
+		&_right {
+			border-top: 0;
+			padding-bottom: 3.6em;
+			.infoBox {
+				&__text {
+					float: none;
+					text-align: justify;
+					padding: 15px;
+					width: 100%;
+					line-height: 1.5;
+					margin-bottom: 0;
+				}
+				&__media {
+				}
+				&__title {
+					text-align: left;
+					&:before {
+						right: auto;
+					}
+				}
+				&__bottom {
+					position: relative;
+					left: 0;
+					width: 100%;
+					padding-left: 4.9em;
+					padding-right: 0;
+					line-height: 1.6;
+					margin-bottom: 5px;
+					&:before {
+						right: auto;
+						left: 0;
+						width: 3.7em;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -1276,6 +1340,46 @@ $duration: 2s;
 			img {
 				width: 100%;
 			}
+		}
+	}
+}
+
+.form__sale {
+	position: relative;
+	.form__grid {
+		position: relative;
+	}
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 39em;
+		height: 39em;
+		background: url(../img/lg-ellips.png) center no-repeat;
+		background-size: 100%;
+		right: -33em;
+		top: -19em;
+		z-index: 0;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		font-size: 8em;
+		opacity: .1;
+		font-weight: 700;
+		right: -3.1em;
+		top: -0.4em;
+	}
+	&_15 {
+		&:after {
+			content: '-15%';
+			
+		}
+	}
+	&_20 {
+		&:after {
+			content: '-20%';
+			
 		}
 	}
 }

@@ -791,7 +791,8 @@ input[type=checkbox]:disabled:indeterminate:before {
   .form__grid .form__field {
     width: 100%; }
   .form__grid .btn {
-    width: 100%; }
+    width: 100%;
+    min-width: auto; }
   .form__field {
     background-repeat: no-repeat;
     background-position: left center;
@@ -1395,15 +1396,34 @@ hr {
         .homeHead__item_static {
           background-size: auto 100%;
           background-position: right center; }
+        .homeHead__item_grey {
+          padding: 2.2em 1.4em 4em; }
       .homeHead_car {
         opacity: 1;
         top: 16.7%; }
+        .homeHead_car--lg {
+          display: none; }
       .homeHead__sub {
-        left: 15px !important; } }
+        left: 15px !important; }
+      .homeHead__vertical {
+        text-align: left; }
+        .homeHead__vertical_content {
+          position: relative;
+          display: block;
+          width: 100%; }
+          .homeHead__vertical_content:before {
+            display: none; }
+          .homeHead__vertical_content--right .homeHead__vertical_wrap {
+            float: none;
+            text-align: left; }
+        .homeHead__vertical_wrap {
+          float: none;
+          text-align: center; } }
 
 .white__line {
   background-color: #fff;
-  padding: 7.9em 0; }
+  padding: 7.9em 0;
+  overflow: hidden; }
   .white__line + hr {
     margin: 0 auto;
     max-width: calc(71.3em - 30px); }
@@ -1655,7 +1675,33 @@ hr {
       .infoBox__bottom {
         position: relative;
         left: 0;
-        margin-top: 12px; } }
+        margin-top: 12px; }
+      .infoBox_right {
+        border-top: 0;
+        padding-bottom: 3.6em; }
+        .infoBox_right .infoBox__text {
+          float: none;
+          text-align: justify;
+          padding: 15px;
+          width: 100%;
+          line-height: 1.5;
+          margin-bottom: 0; }
+        .infoBox_right .infoBox__title {
+          text-align: left; }
+          .infoBox_right .infoBox__title:before {
+            right: auto; }
+        .infoBox_right .infoBox__bottom {
+          position: relative;
+          left: 0;
+          width: 100%;
+          padding-left: 4.9em;
+          padding-right: 0;
+          line-height: 1.6;
+          margin-bottom: 5px; }
+          .infoBox_right .infoBox__bottom:before {
+            right: auto;
+            left: 0;
+            width: 3.7em; } }
 
 .video__wrapper {
   position: relative;
@@ -1877,6 +1923,34 @@ hr {
       margin: 3em 0; }
       .gallery__item img {
         width: 100%; } }
+
+.form__sale {
+  position: relative; }
+  .form__sale .form__grid {
+    position: relative; }
+  .form__sale:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 39em;
+    height: 39em;
+    background: url(../img/lg-ellips.png) center no-repeat;
+    background-size: 100%;
+    right: -33em;
+    top: -19em;
+    z-index: 0; }
+  .form__sale:after {
+    content: '';
+    position: absolute;
+    font-size: 8em;
+    opacity: .1;
+    font-weight: 700;
+    right: -3.1em;
+    top: -0.4em; }
+  .form__sale_15:after {
+    content: '-15%'; }
+  .form__sale_20:after {
+    content: '-20%'; }
 
 /* Footer
  ----------------------------------------------------------------------------- */
