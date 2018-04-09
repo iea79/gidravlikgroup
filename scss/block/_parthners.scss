@@ -1,0 +1,15 @@
+.parthners {
+	margin-top: 3.9em;
+	margin-bottom: 0.5em;
+	> div {
+
+	}
+	&__item {
+		text-align: center;
+	}
+	@media (max-width: 767px) {
+	    > div {
+	    	width: 100%;
+	    }
+	}
+}

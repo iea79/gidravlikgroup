@@ -1,0 +1,47 @@
+$size: 2.1em;
+$duration: 2s;
+.loader {
+    position: absolute;
+    height: $size;
+    width: $size;
+    .circle {
+	    transition: all 0.5s;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: url(../img/map-point.png) center no-repeat;
+        background-size: $size;
+        animation: animate-circle $duration cubic-bezier(.9,.24,.62,.79) infinite;
+        &:nth-of-type(1) {
+            animation-delay: 0;
+        }
+        &:nth-of-type(2) {
+            animation-delay: $duration / 3;
+        }
+        &:nth-of-type(3) {
+            animation-delay: $duration / 6;
+        }
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+    &__first {
+    	top: 9.7em;
+    	left: 14.9em;
+    }
+    &__last {
+    	bottom: 2.6em;
+	    left: 16.6em;
+    }
+}
+
+@keyframes animate-circle {
+    from {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}

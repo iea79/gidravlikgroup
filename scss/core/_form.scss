@@ -222,3 +222,44 @@ input[type=checkbox]:disabled:indeterminate:before {
 		}
 	}
 }
+
+.form__sale {
+	position: relative;
+	.form__grid {
+		position: relative;
+	}
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 39em;
+		height: 39em;
+		background: url(../img/lg-ellips.png) center no-repeat;
+		background-size: 100%;
+		right: -33em;
+		top: -19em;
+		z-index: 0;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		font-size: 8em;
+		opacity: .1;
+		font-weight: 700;
+		right: -3.1em;
+		top: -0.4em;
+	}
+	&_15 {
+		&:after {
+			content: '-15%';
+			
+		}
+	}
+	&_20 {
+		&:after {
+			content: '-20%';
+			
+		}
+	}
+}
+

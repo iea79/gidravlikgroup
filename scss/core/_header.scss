@@ -1,0 +1,219 @@
+/* Header
+ ----------------------------------------------------------------------------- */
+.header {
+	padding: 1.9em 3.3em 1.3em;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	@extend %clear_a;
+	&__left {
+		float: left;
+		width: 13.7%;
+	}
+	&__logo {
+		
+	}
+	&__right {
+		float: right;
+		@extend %clear_a;
+	}
+	&__action {
+		@extend %clear_a;
+		margin-left: -2.3em;
+		
+	}
+	&__call {
+		padding-left: 2.3em;
+		float: left;
+		color: #fcfcfc;
+	}
+	&__tel {
+		display: block;
+		color: #fcfcfc;
+		text-decoration: none;
+		font-size: 1.5em;
+		&:hover {
+			opacity: .8;
+		}
+	}
+	&__center {
+		overflow: hidden;
+		padding-top: 9px;
+	}
+	&__mobile {
+		display: none;
+		// width: 100%;
+		// position: absolute;
+		// right: 0;
+		// top: 0;
+		// bottom: 0;
+	}
+	&__toggle {
+		cursor: pointer;
+		position: absolute;
+		right: 6px;
+		top: 6px;
+		z-index: 100;
+		&:before {
+			content: '☰';
+			font-size: 24px;
+		}
+	}
+	&__drop {
+		padding: 15px;
+		border: 1px solid rgba(#000, .3);
+		min-height: 100%;
+		border-radius: 5px;
+		&_wrap {
+			overflow-x: auto;
+			max-height: 100%;
+			position: fixed;
+			display: none;
+			background-color: #fff;
+			padding: 35px 30px 15px 15px;
+			width: 100%;
+			height: auto;
+			z-index: 99;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: -200%;
+			transition: all .5s;
+		}
+		> * {
+			position: relative;
+		}
+		// &:before {
+		// 	content: '';
+		// 	position: absolute;
+		// 	z-index: 0;
+		// 	border: 1px solid rgba(#000, .3);
+		// 	top: 38px;
+		// 	right: 15px;
+		// 	bottom: 15px;
+		// 	left: 15px;
+		// 	border-radius: 3px;
+		// }
+	}
+	&__subnav {
+		margin: 12px 0;
+		&_item {
+			display: block;
+			text-transform: uppercase;
+			color: #000;
+			font-weight: 500;
+			text-decoration: none;
+			font-size: 14px;
+			margin-bottom: 10px;
+			&:hover {
+				opacity: .8;
+			}
+		}
+	}
+	&_gray {
+		position: relative;
+		background-color: #f0eff4;
+		.header {
+			&__action {
+
+			}
+			&__call {
+				padding-left: 2.3em;
+				float: left;
+				color: #888888;
+			}
+			&__tel {
+				display: block;
+				color: #091217;
+				text-decoration: none;
+				font-size: 1.5em;
+				&:hover {
+					opacity: .8;
+				}
+			}
+		}
+	}
+	@media (max-width: 767px) {
+		background-color: #fff;
+		height: 40px;
+		padding: 1em;
+		&__left {
+			width: 125px;
+		}
+		&__logo {
+			
+		}
+		&__right {
+		}
+		&__action {
+			margin-left: -2.3em;
+			
+		}
+		&__call {
+			padding-left: 2.3em;
+		}
+		&__tel {
+			display: block;
+			color: #fcfcfc;
+			text-decoration: none;
+			font-size: 1.5em;
+			&:hover {
+				opacity: .8;
+			}
+		}
+		&__center {
+			overflow: hidden;
+			padding-top: 9px;
+		}
+		&__drop {
+			&_wrap {
+				display: block;
+			}
+		}
+		&__mobile {
+			display: block;
+			&.open {
+				.header {
+					&__drop {
+						&_wrap {
+							display: block;
+							top: 0;
+						}
+					}
+					&__center {
+						margin: 0;
+						padding: 0;
+						width: 100%;
+					}
+					&__toggle {
+						right: 8px;
+						top: 4px;
+						position: fixed;
+						&:before {
+							content: '×';
+							font-size: 28px;
+							// font-weight: 100;
+						}
+					}
+					&__call {
+						color: #000;
+						margin-bottom: 10px;
+					}
+					&__tel {
+						color: #000;
+					}
+				}
+			}
+		}
+	}
+}
+
+// stiky menu
+.stiky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}

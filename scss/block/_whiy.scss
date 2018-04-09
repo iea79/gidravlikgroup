@@ -1,0 +1,32 @@
+.whiy {
+	&__grid {
+		>div {
+			margin-bottom: 0;
+		}
+	}
+	&__item {
+		
+	}
+	&__img {
+		margin-bottom: 0.2em;
+		width: 2.6em;
+	}
+	&__text {
+		
+	}
+	@media (max-width: 767px) {
+		&__grid {
+			>div {
+				text-align: center;
+				width: 100%;
+				margin-bottom: 15px;
+			}
+		}
+		&__img {
+			width: 100%;
+			img {
+				width: 30px;
+			}
+		}
+	}
+}

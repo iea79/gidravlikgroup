@@ -1,0 +1,76 @@
+.gallery {
+	padding-bottom: 60.3%;
+	margin: 8em 0;
+	position: relative;
+	background: url(../img/gallery-bg.png) top 52% center no-repeat;
+	background-size: 23%;
+	&__item {
+		position: absolute;
+		padding-bottom: 25%;
+		overflow: hidden;
+		display: block;
+		img {
+			position: absolute;
+			display: block;
+			max-width: none;
+			min-height: 100%;
+			width: 100%;
+		}
+		&:first-child {
+			top: 0;
+			left: 0;
+			width: 34%;
+			padding-bottom: 34.2%;
+		}
+		&:nth-child(2) {
+			top: 0;
+			left: 35%;
+			width: 28.6%;
+			padding-bottom: 20%;
+		}
+		&:nth-child(3) {
+			top: 0;
+			right: 0;
+			width: 35.5%;
+			padding-bottom: 24.3%;
+		}
+		&:nth-child(4) {
+			bottom: 0;
+			left: 0;
+			width: 25.2%;
+			padding-bottom: 25.2%;
+		}
+		&:nth-child(5) {
+			bottom: 28.4%;
+			left: 26%;
+			width: 8.2%;
+			padding-bottom: 8%;
+		}
+		&:nth-child(6) {
+			bottom: 0%;
+			left: 26%;
+			width: 18.4%;
+			padding-bottom: 16.2%;
+		}
+		&:nth-child(7) {
+			bottom: 0%;
+			left: 45.2%;
+			width: 18.4%;
+			padding-bottom: 16.2%;
+		}
+		&:nth-child(8) {
+			bottom: 0%;
+			right: 0;
+			width: 35.5%;
+			padding-bottom: 35.2%;
+		}
+	}
+	@media (max-width: 767px) {
+		margin: 3em 0;
+		&__item {
+			img {
+				width: 100%;
+			}
+		}
+	}
+}

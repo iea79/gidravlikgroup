@@ -1,0 +1,44 @@
+// begin header 
+header.header.header_gray
+
+	.header__left
+
+		a(href="index.html").header__logo
+			img(src="img/logo.png")
+
+	.header__right
+
+		.header__action
+
+			.header__call
+
+				a(href="tel:8 (495) 256-06-02").header__tel 8 (495) 256-06-02
+				|Без выходных с 08 до 21
+
+			.header__call
+
+				a(href="tel:8 (800) 77-596-77").header__tel 8 (800) 77-596-77
+				|Бесплатный звонок по РФ
+
+	.header__center
+
+		// begin navbar 
+
+		ul.navbar
+			for name in menu
+				li.navbar__item
+					a(href="#").navbar__link= name
+
+		// end navbar
+
+	.header__mobile
+		.header__toggle
+		.header__drop_wrap
+			.header__drop
+				.header__subnav
+					a(href="static.html").header__subnav_item стационарная мастерская
+					a(href="#").header__subnav_item МОБИЛЬНАЯ МАСТЕРСКАЯ
+					a(href="#").header__subnav_item Перейти в каталог
+
+
+// end header 

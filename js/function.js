@@ -90,9 +90,16 @@ $(document).ready(function() {
         
     })
 
-    if ($('#map')) {
+    if ($('div').is('#map')) {
         ymaps.ready(init);
     }
+
+    $('.sidebar__head').on('click', function(event) {
+        event.preventDefault();
+        var wrap = $(this).closest('.sidebar__item');
+        $('.sidebar__item').not(wrap).removeClass('open');
+        wrap.toggleClass('open');
+    });
 
 });
 

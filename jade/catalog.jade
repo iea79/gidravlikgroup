@@ -1,0 +1,106 @@
+extends template.jade
+
+block variables
+	- var bodyClass = 'catalog';
+	- var menu = ["О нас", "Услуги", "Каталог", "Контакты"];
+
+block title
+	title Каталог
+
+block content
+	// begin catalogHead 
+	.catalogHead
+		.catalogHead__title Каталог
+	// end catalogHead 
+
+	// begin breadcrumb 
+	ul.breadcrumb
+		li
+			a(href="#") Главная 
+		li
+			a(href="#") Каталог
+	// end breadcrumb 
+	
+	include catalog_aside.jade
+
+	.catalog__content
+		// begin catalogList
+		.grid.grid__3.catalogList(data-grid-match)
+			.catalogList__wrap
+				a(href="#").catalogList__item.grid__item
+					span.catalogList__img
+						img(src="img/rvd.jpg", alt="")
+					span.catalogList__name РВД
+			.catalogList__wrap
+				a(href="#").catalogList__item.grid__item
+					span.catalogList__img
+						img(src="img/filter.jpg", alt="")
+					span.catalogList__name Гидравлические и воздушные фильтры
+			.catalogList__wrap
+				a(href="#").catalogList__item.grid__item
+					span.catalogList__img
+						img(src="img/rvd.jpg", alt="")
+					span.catalogList__name РВД
+			.catalogList__wrap
+				a(href="#").catalogList__item.grid__item
+					span.catalogList__img
+						img(src="img/rvd.jpg", alt="")
+					span.catalogList__name РВД
+			.catalogList__wrap
+				a(href="#").catalogList__item.grid__item
+					span.catalogList__img
+						img(src="img/filter.jpg", alt="")
+					span.catalogList__name Гидравлические и воздушные фильтры
+			.catalogList__wrap
+				a(href="#").catalogList__item.grid__item
+					span.catalogList__img
+						img(src="img/rvd.jpg", alt="")
+					span.catalogList__name РВД
+			.catalogList__wrap
+				a(href="#").catalogList__item.grid__item
+					span.catalogList__img
+						img(src="img/rvd.jpg", alt="")
+					span.catalogList__name РВД
+			.catalogList__wrap
+				a(href="#").catalogList__item.grid__item
+					span.catalogList__img
+						img(src="img/filter.jpg", alt="")
+					span.catalogList__name Гидравлические и воздушные фильтры
+			.catalogList__wrap
+				a(href="#").catalogList__item.grid__item
+					span.catalogList__img
+						img(src="img/rvd.jpg", alt="")
+					span.catalogList__name РВД
+			.catalogList__wrap
+				a(href="#").catalogList__item.grid__item
+					span.catalogList__img
+						img(src="img/rvd.jpg", alt="")
+					span.catalogList__name РВД
+			.catalogList__wrap
+				a(href="#").catalogList__item.grid__item
+					span.catalogList__img
+						img(src="img/filter.jpg", alt="")
+					span.catalogList__name Гидравлические и воздушные фильтры
+			.catalogList__wrap
+				a(href="#").catalogList__item.grid__item
+					span.catalogList__img
+						img(src="img/rvd.jpg", alt="")
+					span.catalogList__name РВД
+			.catalogList__wrap
+				a(href="#").catalogList__item.grid__item
+					span.catalogList__img
+						img(src="img/rvd.jpg", alt="")
+					span.catalogList__name РВД
+			.catalogList__wrap
+				a(href="#").catalogList__item.grid__item
+					span.catalogList__img
+						img(src="img/filter.jpg", alt="")
+					span.catalogList__name Гидравлические и воздушные фильтры
+			.catalogList__wrap
+				a(href="#").catalogList__item.grid__item
+					span.catalogList__img
+						img(src="img/rvd.jpg", alt="")
+					span.catalogList__name РВД
+
+		// end catalogList
+		

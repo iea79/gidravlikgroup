@@ -1,0 +1,41 @@
+// Breadcrumb ==================================================================
+.breadcrumb {
+	margin: 1.5em 4.2em;
+	padding: 0;
+	li {
+		display: inline-block;
+		vertical-align: baseline;
+		margin-right: 0.4em;
+		&:not(:first-child) {
+			&:before {
+				content: '›';
+				color: #888888;
+				// content: url(../img/bread-caret.png);
+				display: inline-block;
+				margin-right: 0.5em;
+			}
+		}
+		&:last-child {
+			a {
+				cursor: default;
+				text-decoration: none;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		
+		a {
+			font-size: 0.8em;
+			color: #888888;
+			letter-spacing: 0.03em;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	@media (max-width: 767px) {
+    	margin: 1.5em 1.8em;
+	}
+}

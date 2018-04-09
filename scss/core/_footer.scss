@@ -1,0 +1,72 @@
+/* Footer
+ ----------------------------------------------------------------------------- */
+.footer {
+	position: relative;
+	min-height: $footer_height;
+	background-color: #071015;
+	color: #ccc;
+	padding: 9.3em 0 2.3em;
+	@extend %clear_all;
+	.container_center {
+	}
+	&__nav {
+		margin-left: -2em;
+		margin-bottom: 3.1em;
+		@extend %clear_a;
+		&:after {
+			content: '';
+			display: block;
+			border-bottom: 2px solid rgba(#fff, .8);
+			margin-left: 2em;
+		}
+	}
+	&__col {
+		float: left;
+		padding-left: 2em;
+		margin-bottom: 1.9em;
+		width: 33.3%;
+	}
+	&__head {
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-bottom: 1.7em;
+		color: #fff;
+		font-size: 1.05em;
+	}
+	&__list {
+		font-size: 0.95em;
+	}
+	&__listItem {
+		margin-bottom: 0.78em;
+	}
+	&__navLink {
+		color: #cccccc;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&__contact {
+		margin-bottom: 1.9em;
+	}
+	&__tel {
+		color: #fff;
+		display: block;
+		font-size: 1.5em;
+		text-decoration: none;
+		&:hover {
+			opacity: .8;
+		}
+	}
+	&__copy {
+		text-align: center;
+		font-size: 0.94em;
+	}
+	@media (max-width: 767px) {
+		font-size: 120%;
+		padding: 4em 0 2.3em;
+		&__col {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,170 @@
+.wrapper {
+	font-size: $main_font_size;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto (-$footer_height) auto; // отрицательный нижний отступ на высоту футера
+}
+
+.container_center {
+	max-width: $container_width;
+	padding: 0 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.column {
+	@include columns(4, 20px, 300px);
+}
+
+.txt {
+	@each $status_el, $color_bg in $el_colors {
+		&__#{$status_el} {
+			color: $color_bg;
+		}
+	}
+	&__default {
+		font-family: $main_font_family;
+	}	
+}
+
+hr {
+    border: none; /* Убираем границу для браузера Firefox */
+    color: #000; /* Цвет линии для остальных браузеров */
+    background-color: #000; /* Цвет линии для браузера Firefox и Opera */
+    height: 2px; /* Толщина линии */
+    margin-top: 8.5em;
+    margin-bottom: 9.2em;
+    @media (max-width: 767px) {
+	    margin-top: 2em;
+	    margin-bottom: 3.5em;
+    }
+}
+
+/* Middle
+ ----------------------------------------------------------------------------- */
+.main__content {
+	padding-bottom: $footer_height;
+	@extend %clear_a;
+}
+
+.white__line {
+	background-color: #fff;
+	padding: 7.9em 0;
+	overflow: hidden;
+	+ hr {
+		margin: 0 auto;
+		max-width: calc(#{$container_width} - 30px);
+	}
+	@media (max-width: 767px) {
+		padding: 4.3em 0;
+	}
+}
+
+.grey__line {
+	padding: 9.1em 0;
+	background-color: #f0eff4;
+	@media (max-width: 767px) {
+		padding: 4.3em 0;
+	}
+}
+
+.img__line {
+	padding: 9.1em 0;
+	background-image: url(../img/img-line.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	.center__title {
+		color: #fff;
+	}
+	&_car {
+		background-image: url(../img/img-line-car.jpg);
+	}
+	&_action {
+		text-align: center;
+		margin: 3em 0 0;
+	}
+	@media (max-width: 767px) {
+		padding: 4.3em 0;
+	}
+}
+
+
+.bg__dround {
+	background-image: url(../img/lg-ellips.png), url(../img/lg-ellips.png);
+	background-repeat: no-repeat;
+	background-position: left -34em bottom -1.2em, right -22.1em top 7em;
+	background-size: 55em, 39.9em;
+	@media (max-width: 767px) {
+		background-image: none;
+	}
+}
+.bg__rround {
+	background-image:  url(../img/lg-ellips.png);
+	background-repeat: no-repeat;
+	background-position: right -22.1em top 13em;
+	background-size: 55em;
+	@media (max-width: 767px) {
+		background-image: none;
+	}
+}
+.bg__lround {
+	background-image:  url(../img/lg-ellips.png);
+	background-repeat: no-repeat;
+	background-position: left -36.1em top 16em;
+	background-size: 55em;
+	@media (max-width: 767px) {
+		background-image: none;
+	}
+}
+.bg__fitting {
+	background-image: url(../img/tubing.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	@media (max-width: 767px) {
+		background-image: none;
+	}
+}
+
+.page__title {
+	font-size: 3em;
+	font-family: Kankin;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin-bottom: 1em;
+	&:before {
+		content: '';
+		margin-bottom: 0.35em;
+		background-color: #000000;
+		opacity: 0.2;
+		width: 1.85em;
+		height: 2px;
+		display: block;
+	}
+	&_notline {
+		&:before {
+			display: none;
+		}
+	}
+	@media (max-width: 767px) {
+	    font-size: 2.4em;
+	}
+}
+
+.center__title {
+	font-size: 3em;
+	font-family: Kankin;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin-bottom: 1.15em;
+	text-align: center;
+	@media (max-width: 767px) {
+	    font-size: 2.4em;
+	}
+}
+
+.mapBox {
+	height: 44.8em;
+}
+

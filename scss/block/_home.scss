@@ -1,0 +1,17 @@
+/* home
+ ----------------------------------------------------------------------------- */
+.home {
+	.navbar {
+		margin-left: 18.4em;
+		margin-right: 2.9em;
+	}
+	.header {
+		&__left {
+		}
+	}
+	@media (max-width: 767px) {
+		.navbar {
+			margin: 0;
+		}
+	}
+}

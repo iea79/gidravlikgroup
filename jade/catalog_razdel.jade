@@ -1,0 +1,39 @@
+extends catalog_template.jade
+
+block variables
+	- var bodyClass = '';
+	- var menu = ["О нас", "Услуги", "Каталог", "Контакты"];
+
+block title
+	title Мобильная мастерская
+
+block content
+
+	// begin breadcrumb 
+	ul.breadcrumb
+		li
+			a(href="#") Главная 
+		li
+			a(href="#") Каталог
+	// end breadcrumb 
+
+	include catalog_aside.jade
+
+	.catalog__content
+
+		.category
+			.category__head
+				img(src="img/fitting.jpg", alt="")
+				p Фитингом или наконечником для РВД называется сборочная единица в паре состоящей из ниппеля с гайкой или штуцера. Название пришло из английского языка, где имеет значения подгонка или сборка. С помощью фитинга гидравлический рукав соединяется с остальными частями системы подачи гидравлических жидкостей или систем управления: с мотором, насосом, цилиндром, распределителем или трубопроводами.
+				p Фитинги отличаются друг от друга стандартами, резьбами, системой уплотнений. Чаще всего на технике одного производителя встречаются только фитинги определенных стандартов.
+
+		.grid.grid__3.catalogList(data-grid-match)
+			- var count = 12;
+			- for (var i = 0; i<count; i++)
+				.catalogList__wrap
+					a(href="#").catalogList__item.grid__item
+						span.catalogList__img
+							img(src="img/rvd.jpg", alt="")
+						span.catalogList__name SVAROG
+							span.catalogList__text Угловой диаметр от 6 до 31 мм, типов 1SN, 2SN, 1SC, 2SC, 4SH и 4S 
+
