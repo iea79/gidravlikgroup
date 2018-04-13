@@ -56,6 +56,9 @@ hr {
 		margin: 0 auto;
 		max-width: calc(#{$container_width} - 30px);
 	}
+	p {
+		color: #666666;
+	}
 	@media (max-width: 767px) {
 		padding: 4.3em 0;
 	}
@@ -74,11 +77,15 @@ hr {
 	background-image: url(../img/img-line.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	color: #fff;
 	.center__title {
 		color: #fff;
 	}
 	&_car {
 		background-image: url(../img/img-line-car.jpg);
+	}
+	&_sevice {
+		background-image: url(../img/service-bg.jpg);
 	}
 	&_action {
 		text-align: center;
@@ -142,6 +149,15 @@ hr {
 		height: 2px;
 		display: block;
 	}
+	&_right {
+		text-align: right;
+		position: relative;
+		&:before {
+			position: absolute;
+			right: 0.1em;
+			top: -.35em;
+		}
+	}
 	&_notline {
 		&:before {
 			display: none;
@@ -159,6 +175,20 @@ hr {
 	letter-spacing: 0.1em;
 	margin-bottom: 1.15em;
 	text-align: center;
+	&_topBord {
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			background-color: #fff;
+			opacity: 0.2;
+			height: 2px;
+			width: 1.85em;
+			left: 50%;
+			margin-left: -.925em;
+			top: -.35em;
+		}
+	}
 	@media (max-width: 767px) {
 	    font-size: 2.4em;
 	}

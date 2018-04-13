@@ -1,0 +1,139 @@
+extends catalog_template.jade
+
+block variables
+	- var bodyClass = '';
+	- var menu = ["О нас", "Услуги", "Каталог", "Контакты"];
+
+block title
+	title Каталог
+
+block content
+
+	// begin breadcrumb 
+	ul.breadcrumb
+		li
+			a(href="#") Главная 
+		li
+			a(href="#") Каталог
+		li
+			a(href="#") Гидромолот Impulse 60
+	// end breadcrumb 
+
+	.grey__line
+		.container_center
+
+			.product
+				.product__left
+					.product__preview
+						.product__lg.active#1
+							img(src="img/prod-lg.jpg", alt="")
+						.product__lg#2
+							img(src="img/rvd.jpg", alt="")
+						.product__lg#3
+							img(src="img/prod-lg.jpg", alt="")
+					.product__thumbs
+						.product__sm(data-product="1")
+							img(src="img/prod-sm.jpg", alt="")
+						.product__sm(data-product="2")
+							img(src="img/rvd.jpg", alt="")
+						.product__sm(data-product="3")
+							img(src="img/prod-sm.jpg", alt="")
+				.product__right
+					.product__name Гидромолот Impulse 60
+					.product__price 2850.00 руб.
+					.product__descr
+						.product__list
+							.product__listItem Масса гидромолота: 
+								b 75 кг
+							.product__listItem Масса экскаватора: 
+								b 0,7-1,5 т
+							.product__listItem Диаметр рабочего инструмента: 
+								b 40 мм
+							.product__listItem Энергия удара: 
+								b 226 Дж
+							.product__listItem Частота ударов: 
+								b 625-1250 уд./мин
+							.product__listItem Рабочее давление: 
+								b 70-80 атм
+							.product__listItem Поток масла: 
+								b 10-25 л./мин
+					.product__action
+						a(href="#").btn Купить
+
+	.white__line
+		.container_center
+
+			.page__title Технические характеристики 
+			
+			.table__wrap
+				table.table
+					thead
+						tr
+							th Условный диаметр (мм)
+							th Условный диаметр (дюйм)
+							th Внутренний диаметр (мм)
+							th Наружный диаметр (мм)
+							th Рабочее давление (bar)
+							th Разрывное давление (bar)
+							th Минимальный радиус изгиба (мм)
+							th Вес <br>(кг/м.п.)
+					tbody
+						- var row = 8;
+						- for (var i = 0; i<row; i++)
+							tr
+								td 2
+								td 1/4
+								td 5
+								td 12
+								td 232
+								td 900
+								td 100
+								td 0,25
+			
+	.img__line.img__line_sevice
+		.container_center
+
+			.center__title.center__title_topBord О товаре
+
+			p Электрический духовой шкаф встраиваемого типа Bosch Serie | 6 HBA23B361R позволяет готовить вкусную и разнообразную пищу. Он способен работать в 7 различных режимах, что существенно расширяет кулинарные возможности его владельцев.
+
+			p ПРОСТОЕ УПРАВЛЕНИЕ <br>
+				|Сенсорная панель и утапливаемые ручки делают использование всех функций этого духового шкафа особенно удобным и простым. Благодаря таймеру выключения со звуковым сигналом владельцу не нужно постоянно следить за готовящимся блюдом: по истечении заданного времени духовка выключится автоматически.
+
+			p КАТАЛИТИЧЕСКАЯ ОЧИСТКА <br>
+				|Покрытие EcoClean, нанесённое на внутренние стенки, впитывает жир и другие загрязнения, а затем разрушает их путём окисления. Это заметно упрощает уход за духовкой, ведь стенки достаточно просто протереть.
+
+			p ЗАЩИТА ОТ ДЕТЕЙ
+			
+	.white__line
+		.container_center
+
+			.page__title Информация о доставке
+
+			p Электрический духовой шкаф встраиваемого типа Bosch Serie | 6 HBA23B361R позволяет готовить вкусную и разнообразную пищу. Он способен работать в 7 различных режимах, что существенно расширяет кулинарные возможности его владельцев.
+
+			p ПРОСТОЕ УПРАВЛЕНИЕ <br>
+				|Сенсорная панель и утапливаемые ручки делают использование всех функций этого духового шкафа особенно удобным и простым. Благодаря таймеру выключения со звуковым сигналом владельцу не нужно постоянно следить за готовящимся блюдом: по истечении заданного времени духовка выключится автоматически.
+
+			p КАТАЛИТИЧЕСКАЯ ОЧИСТКА <br>
+				|Покрытие EcoClean, нанесённое на внутренние стенки, впитывает жир и другие загрязнения, а затем разрушает их путём окисления. Это заметно упрощает уход за духовкой, ведь стенки достаточно просто протереть.
+
+			p ЗАЩИТА ОТ ДЕТЕЙ <br>
+				|Разработчики предусмотрели эффективную защиту от детей. Благодаря ей ребёнок не сможет самостоятельно включить духовку или вмешаться в её работу, когда поблизости нет взрослы
+
+	hr
+
+	.white__line
+		.container_center
+
+			.page__title.page__title_right Рекомендуем
+			
+			.grid.grid__3.catalogList(data-grid-match)
+				- var count = 3;
+				- for (var i = 0; i<count; i++)
+					.catalogList__wrap
+						a(href="#").catalogList__item.grid__item
+							span.catalogList__img
+								img(src="img/rvd.jpg", alt="")
+							span.catalogList__name SVAROG
+							span.catalogList__text Угловой диаметр от 6 до 31 мм, типов 1SN, 2SN, 1SC, 2SC, 4SH и 4S 

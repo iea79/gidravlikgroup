@@ -148,7 +148,7 @@ input[type=checkbox]:disabled:indeterminate:before {
 	border-radius: 0px;
 	transition: all .3s;
 	text-decoration: none;
-	min-width: 220px;
+	min-width: 13.8em;
 	&:hover {
 		background-color: lighten($btn_default_bg_color, 6%);
 		color: $btn_default_text_color;

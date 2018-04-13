@@ -101,6 +101,13 @@ $(document).ready(function() {
         wrap.toggleClass('open');
     });
 
+    $('.product__sm').on('click', function(event) {
+        event.preventDefault();
+        var id = $(this).data('product');
+        $('.product__lg').removeClass('active');
+        $('#'+id+'').addClass('active');
+    });
+
 });
 
 $(window).resize(function(event) {

@@ -58,7 +58,9 @@ footer.footer
 				.footer__contact
 					a(href="tel:").footer__tel 8 (800) 77-596-77
 					|Бесплатный звонок по РФ
-				.footer__contact г. Москва, 32 км МКАД, внешняя сторона, ТЦ «ТРАКТ», бокс 22 
+				for movie in movieList
+					+movie-card(movie)
+					//- .footer__contact= name 
 		// end footer__nav
 		
 		// begin footer__copy 
