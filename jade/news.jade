@@ -1,0 +1,148 @@
+extends catalog_template.jade
+
+block variables
+	- var bodyClass = 'catalog';
+	- var menu = ["О нас", "Услуги", "Каталог", "Контакты"];
+
+block title
+	title Новости
+
+block content
+
+	// begin breadcrumb 
+	ul.breadcrumb
+		li
+			a(href="#") Главная 
+		li
+			a(href="#") Новости
+	// end breadcrumb 
+	
+	include catalog_aside.jade
+
+	.news__content
+		// begin newsList
+		.grid.grid__3.newsList(data-grid-match)
+			.newsList__wrap
+				a(href="#").newsList__item.grid__item
+					span.newsList__head
+						span.newsList__date 17.03.18
+						span.newsList__name Название новости
+					span.newsList__img
+						img(src="img/news-1.jpg", alt="")
+					span.newsList__text.
+						Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время
+					span.newsList__next Читать далее &raquo;
+			.newsList__wrap
+				a(href="#").newsList__item.grid__item
+					span.newsList__head
+						span.newsList__date 17.03.18
+						span.newsList__name Название новости
+					span.newsList__img
+						img(src="img/news-1.jpg", alt="")
+					span.newsList__text.
+						Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время
+					span.newsList__next Читать далее &raquo;
+			.newsList__wrap
+				a(href="#").newsList__item.grid__item
+					span.newsList__head
+						span.newsList__date 17.03.18
+						span.newsList__name Название новости
+					span.newsList__img
+						img(src="img/news-1.jpg", alt="")
+					span.newsList__text.
+						Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время
+					span.newsList__next Читать далее &raquo;
+			.newsList__wrap
+				a(href="#").newsList__item.grid__item
+					span.newsList__head
+						span.newsList__date 17.03.18
+						span.newsList__name Название новости
+					span.newsList__img
+						img(src="img/news-1.jpg", alt="")
+					span.newsList__text.
+						Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время
+					span.newsList__next Читать далее &raquo;
+			.newsList__wrap
+				a(href="#").newsList__item.grid__item
+					span.newsList__head
+						span.newsList__date 17.03.18
+						span.newsList__name Название новости
+					span.newsList__img
+						img(src="img/news-1.jpg", alt="")
+					span.newsList__text.
+						Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время
+					span.newsList__next Читать далее &raquo;
+			.newsList__wrap
+				a(href="#").newsList__item.grid__item
+					span.newsList__head
+						span.newsList__date 17.03.18
+						span.newsList__name Название новости
+					span.newsList__img
+						img(src="img/news-1.jpg", alt="")
+					span.newsList__text.
+						Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время
+					span.newsList__next Читать далее &raquo;
+			.newsList__wrap
+				a(href="#").newsList__item.grid__item
+					span.newsList__head
+						span.newsList__date 17.03.18
+						span.newsList__name Название новости
+					span.newsList__img
+						img(src="img/news-1.jpg", alt="")
+					span.newsList__text.
+						Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время
+					span.newsList__next Читать далее &raquo;
+			.newsList__wrap
+				a(href="#").newsList__item.grid__item
+					span.newsList__head
+						span.newsList__date 17.03.18
+						span.newsList__name Название новости
+					span.newsList__img
+						img(src="img/news-1.jpg", alt="")
+					span.newsList__text.
+						Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время
+					span.newsList__next Читать далее &raquo;
+			.newsList__wrap
+				a(href="#").newsList__item.grid__item
+					span.newsList__head
+						span.newsList__date 17.03.18
+						span.newsList__name Название новости
+					span.newsList__img
+						img(src="img/news-1.jpg", alt="")
+					span.newsList__text.
+						Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время
+					span.newsList__next Читать далее &raquo;
+			.newsList__wrap
+				a(href="#").newsList__item.grid__item
+					span.newsList__head
+						span.newsList__date 17.03.18
+						span.newsList__name Название новости
+					span.newsList__img
+						img(src="img/news-1.jpg", alt="")
+					span.newsList__text.
+						Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время
+					span.newsList__next Читать далее &raquo;
+			.newsList__wrap
+				a(href="#").newsList__item.grid__item
+					span.newsList__head
+						span.newsList__date 17.03.18
+						span.newsList__name Название новости
+					span.newsList__img
+						img(src="img/news-1.jpg", alt="")
+					span.newsList__text.
+						Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время
+					span.newsList__next Читать далее &raquo;
+			.newsList__wrap
+				a(href="#").newsList__item.grid__item
+					span.newsList__head
+						span.newsList__date 17.03.18
+						span.newsList__name Название новости
+					span.newsList__img
+						img(src="img/news-1.jpg", alt="")
+					span.newsList__text.
+						Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время
+					span.newsList__next Читать далее &raquo;
+			
+
+		// end newsList
+		

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
-    <title>Home</title>
+    <title>Новости</title>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -17,10 +17,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
     <script src="js/function.js"></script>
   </head>
-  <body class="home">
+  <body class="catalog">
     <div class="wrapper">
       <!-- begin header -->
-      <header class="header">
+      <header class="header header_gray">
         <div class="header__left"><a class="header__logo" href="index.html"><img src="img/logo.png"/></a></div>
         <div class="header__right">
           <div class="header__action">
@@ -50,111 +50,30 @@
       <!-- end header -->
       <!-- begin main__content-->
       <main class="main__content">
-        <!-- begin .homeHead -->
-        <div class="homeHead">
-          <div class="homeHead__item homeHead__item_static"><a class="homeHead__name" href="static.html">стационарная мастерская</a>
-            <div class="loader loader__first">
-              <div class="circle"></div>
-              <div class="circle"></div>
-              <div class="circle"></div>
-            </div>
-            <div class="loader loader__last">
-              <div class="circle"></div>
-              <div class="circle"></div>
-              <div class="circle"></div>
-            </div>
-          </div>
-          <div class="homeHead__item homeHead__item_mobile"><a class="homeHead__name" href="mobile.html">МОБИЛЬНАЯ МАСТЕРСКАЯ</a><img class="homeHead_car" src="img/car.png" id="car"/></div>
-          <div class="homeHead__item homeHead__item_catalog"><a class="homeHead__name" href="#">Перейти в каталог</a></div>
-        </div>
-        <!-- end .homeHead -->
-        <!-- begin white__line-->
-        <div class="white__line bg__dround">
+        <!-- begin breadcrumb -->
+        <ul class="breadcrumb">
+          <li><a href="#">Главная </a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Одна новость</a></li>
+        </ul>
+        <!-- end breadcrumb -->
+        <!-- begin new-->
+        <div class="newHead">
           <div class="container_center">
-            <div class="page__title"><span class="txt__danger">Ремонт и изготовление РВД </span>в Москве и МО</div>
-            <!-- begin infoBox -->
-            <div class="infoBox">
-              <div class="infoBox__text infoBox_rotor">
-                <div class="infoBox__title">О нас </div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
-                <div class="infoBox__name">Lorem Ipsum.</div>
-              </div>
-              <div class="infoBox__media">
-                <div class="video__wrapper"><img class="video__preview" src="img/vid1.jpg" alt=""/>
-                  <div class="video__play"></div>
-                </div>
-              </div>
+            <div class="newHead__container">
+              <div class="newHead__title">Инжинеры NASA начали работу над новым марсоходом</div>
+              <div class="newHead__date">17 марта 2018</div>
             </div>
-            <!-- end infoBox 			-->
           </div>
         </div>
-        <!-- end white__line-->
-        <!-- begin grey__line -->
-        <div class="grey__line bg__fitting">
+        <div class="newBody">
           <div class="container_center">
-            <div class="center__title">Почему именно мы?</div>
-            <!-- begin-->
-            <div class="grid grid__5 whiy__grid">
-              <div class="whiy__item">
-                <div class="whiy__img"><img src="img/whiy1.png" alt=""/></div>Квалифицированные мастера с большим опытом работы
-              </div>
-              <div class="whiy__item">
-                <div class="whiy__img"><img src="img/whiy2.png" alt=""/></div>Отсрочка платежа до 30 дней
-              </div>
-              <div class="whiy__item">
-                <div class="whiy__img"><img src="img/whiy3.png" alt=""/></div>Всегда в наличии более 3-х тысяч комплектующих и гидрокомпонентов
-              </div>
-              <div class="whiy__item">
-                <div class="whiy__img"><img src="img/whiy4.png" alt=""/></div>Предоставляем скидки постоянным клиентам
-              </div>
-              <div class="whiy__item">
-                <div class="whiy__img"><img src="img/whiy5.png" alt=""/></div>Бесплатный вызов по звонку
-              </div>
-            </div>
-            <!-- end-->
+            <div class="newBody__title">Что такое Lorem Ipsum?</div>
+            <p class="newBody__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+            <p class="newBody__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
           </div>
         </div>
-        <!-- end grey__line -->
-        <!-- begin white__line-->
-        <div class="white__line bg__rround">
-          <div class="container_center">
-            <div class="center__title">Как мы работаем</div>
-            <!-- begin slider -->
-            <div class="slider">
-              <!-- Slide 1-->
-              <div class="slider__item">
-                <div class="infoBox">
-                  <div class="infoBox__media infoBox__media_img"><img src="img/slide.jpg" alt=""/></div>
-                  <div class="infoBox__text">
-                    <div class="infoBox__name">Виктор  Куралесов<span class="infoBox__date">26.10.2017</span></div>Сотрудничаем не первый год. Видно, как парк машин развивается — это радует. Действительно оперативный выезд, а не сами знаете, как бывает. По малейшему звонку люди выезжают. Хоть в праздники, хоть когда. Подход ваш — определенно нравится. Ну и помимо услуг по договору еще поставляют нам разные расходники, чем также нас выручают. Спасибо!
-                  </div>
-                  <div class="infoBox__bottom">Руководитель бурового отдела <br>Компания "РИТА" - <a href="www.rita.com.ru">www.rita.com.ru</a></div>
-                </div>
-              </div>
-              <!-- Slide 2-->
-              <div class="slider__item">
-                <div class="infoBox">
-                  <div class="infoBox__media infoBox__media_img"><img src="img/slide.jpg" alt=""/></div>
-                  <div class="infoBox__text">
-                    <div class="infoBox__name">Виктор  Куралесов<span class="infoBox__date">26.10.2017</span></div>Сотрудничаем не первый год. Видно, как парк машин развивается — это радует. Действительно оперативный выезд, а не сами знаете, как бывает. По малейшему звонку люди выезжают. Хоть в праздники, хоть когда. Подход ваш — определенно нравится. Ну и помимо услуг по договору еще поставляют нам разные расходники, чем также нас выручают. Спасибо!
-                  </div>
-                  <div class="infoBox__bottom">Руководитель бурового отдела Компания "РИТА" - <a href="www.rita.com.ru">www.rita.com.ru</a></div>
-                </div>
-              </div>
-            </div>
-            <!-- end slider -->
-            <hr/>
-            <div class="page__title">Наши клиенты</div>
-            <!-- begin parthners-->
-            <div class="grid grid__5 parthners">
-              <div class="parthners__item"><img src="img/parthners1.png" alt=""/></div>
-              <div class="parthners__item"><img src="img/parthners2.png" alt=""/></div>
-              <div class="parthners__item"><img src="img/parthners3.png" alt=""/></div>
-              <div class="parthners__item"><img src="img/parthners4.png" alt=""/></div>
-              <div class="parthners__item"><img src="img/parthners5.png" alt=""/></div>
-            </div>
-            <!-- end parthners-->
-          </div>
-        </div>
+        <!-- end new-->
       </main>
       <!-- end main__content -->
     </div>

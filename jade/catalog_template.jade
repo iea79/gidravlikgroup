@@ -1,19 +1,26 @@
+block variables
 - var bodyClass;
 - var menu = ["О нас", "Услуги", "Каталог", "Контакты"];
-block variables
+- var movieList = [{"title":"Головной офис: ","address":"г. Москва, 32 км МКАД, внешняя сторона, АГМ «ТРАКТ», офис 201"}, {"title":"Мастерская на севере  Москвы: ","address":"Россия, МО, городской округ Мытищи, деревня Грибки, ул. Складская, д. 5, павильон 28"}, {"title":"Мастерская на юге Москвы: ","address":"Россия, г. Москва, 32 км МКАД, внешняя сторона, АГМ «ТРАКТ», бокс 22"}];
+
+mixin movie-card(movie)
+	.footer__contact
+		b= movie.title
+		br
+		span= movie.address
 
 <!DOCTYPE html>
 html(lang="en")
-	
+
 	include head.jade
 	body(class=bodyClass)
 		.wrapper
-			
+
 			include catalog_header.jade
 
 			// begin main__content
 			main.main__content
-					
+
 				block content
 
 			// end main__content 
