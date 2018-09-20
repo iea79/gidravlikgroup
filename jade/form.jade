@@ -1,0 +1,30 @@
+extends catalog_template.jade
+
+block variables
+	- var bodyClass = 'catalog';
+	- var menu = ["О нас", "Услуги", "Каталог", "Контакты"];
+
+block title
+	title Заказать звонок
+
+block content
+
+	form.form(action="#")
+		.container_center
+			h1.form__title Стать оптовым партнером
+			.formBody
+				.formBody__row.formBody__row--name
+					input.formBody__inp(type="name" name="name" placeholder="Ваше Имя")
+				.formBody__row.formBody__row--tel
+					input.formBody__inp(type="tel" name="tel" placeholder="Ваш Телефон")
+				.formBody__row.formBody__row--email
+					input.formBody__inp(type="email" name="email" placeholder="Ваш Почта")
+				.formBody__row.formBody__row--message
+					textarea.formBody__texarea(placeholder="Ваше сообщение")
+				.formBody__row.formBody__row--center
+					button.formBody__btn Заказать звонок
+
+
+
+	
+		

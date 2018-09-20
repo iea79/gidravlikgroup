@@ -1,0 +1,23 @@
+extends catalog_template.jade
+
+block variables
+	- var bodyClass = 'catalog';
+	- var menu = ["О нас", "Услуги", "Каталог", "Контакты"];
+
+block title
+	title Новости
+
+block content
+	
+	// begin error
+	.container_center
+		.error
+			| К сожалению, эта страница не найдена.
+			br
+			| Возможно, вы ввели неправильный адрес или страница была удалена.
+			br
+			| Воспользуйтесь #[a(href="favascript-void(0)").error__link поиском] или вернитесь на #[a(href="favascript-void(0)").error__link главную страницу].
+	// end error
+
+	
+		
