@@ -16,8 +16,8 @@
 		position: relative;
 		&_static {
 			width: 33.7%;
-			background: #fbfbfb url(../img/map.png) bottom 1.7em right -7em no-repeat;
-			background-size: 47.1em;
+			background: url(../img/headMap2.png) bottom 1.2em right 5em no-repeat;
+			background-size: 29em;
 			.homeHead__name {
 				border: 2px solid rgba(0, 0, 0, 0.4);
 				background-color: rgba(#fff, 0.5);
@@ -46,27 +46,25 @@
 		&_map {
 			position: relative;
 			z-index: 2;
-			width: 66.6%;
-			background:  url(../img/map-list.png) center no-repeat;
+			width: 95.6%;
+			background-color: #f0eff4;
 			background-size: 100% 100%;
-			padding: 18.1em 4.4em 15.3em ;
-			margin-right: -6.1%;
+			padding: 18.1em 4.4em 11.3em ;
+		    background: url(../img/headMap2.png) right 4.5em top 5em no-repeat;
+    		background-size: auto 80%;
+			margin-right: 0;
+			background-color: #f0eff4;
 			.loader {
 				&__first {
 					left: auto;
-					top: 4.8em;
-					right: 29.1em;
+					top: 7.3em;
+					right: 18.6em;
 				}
 				&__last {
 					left: auto;
-					right: 27.15em;
-					bottom: 1.7em;
+					right: 16.45em;
+					bottom: 6.7em;
 				}
-			}
-			.homeHead__sub {
-				font-size: 1em;
-				bottom: 1.7em;
-				left: 4.6em;
 			}
 		}
 		&_mech {
@@ -82,12 +80,12 @@
 			width: 66.6%;
 			padding: 10.2em 4.2em 10.3em ;
 			background-color: #f0eff4;
-			font-size: 1.5em;
+			font-size: 1.2em;
 			text-align: left;
 		}
 		&_dark {
 			width: 34.5%;
-			padding: 19.6em 4.4em 10.3em ;
+			padding: 16.2em 4.4em 10.3em ;
 			background-color: #061115;
 			text-align: left;
 			.btn {
@@ -112,12 +110,13 @@
 				position: absolute;
 				top: 50%;
 				right: 0;
-				width: 16em;
+				width: 9em;
 				
 			}
 			&--right {
 				.homeHead__vertical_wrap {
-					float: right;
+					float: left;
+					padding-left: 13em;
 				}
 				&:before {
 					right: auto;
@@ -129,13 +128,6 @@
 		&_wrap {
 			float: left;
 		}
-	}
-	&__sub {
-		position: absolute;
-		bottom: 1.2em;
-		left: 4.1em;
-		font-size: 0.7em;
-		color: #888888;
 	}
 	&__name {
 		border: 1px solid;
@@ -171,10 +163,22 @@
 	}
 	&__title {
 		font-family: Kankin;
-		font-size: 2.07em;
+		font-size: 2.8em;
 		letter-spacing: 0.08em;
 		text-transform: uppercase;
 		margin-bottom: 0.45em;
+		@media (max-width: 767px) {
+			font-size: 1.5em;
+		}
+		.txt__danger{
+			line-height: 2px;
+		}
+		&Big{
+			font-size: 3em;
+			@media (max-width: 767px) {
+				font-size: 2.5em;
+			}
+		}
 	}
 	&__vertical {
 		// font-size: 1.5em;
@@ -205,7 +209,7 @@
 	    	}
 	    	&_static {
 	    		background-size: auto 100%;
-	    		background-position: right center;
+	    		background-position: bottom 0em right 54%;
 	    	}
 			&_grey {
 				padding: 2.2em 1.4em 4em;
@@ -240,6 +244,7 @@
 			&_wrap {
 				float: none;
 				text-align: center;
+				padding-left: 0 !important;
 			}
 		}
 	}

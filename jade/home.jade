@@ -15,10 +15,12 @@ block content
 				.circle
 				.circle
 				.circle
+				//- .loader__name Россия, МО, городской округ Мытищи <br>деревня Грибки, ул. Складская, дом 5, павилион 28
 			.loader.loader__last
 				.circle
 				.circle
 				.circle
+				//- .loader__name Россия, Москва, МКАД, 32-й киллометр, <br>внешняя сторона, с1, АГМ "ТРАКТ", бокс 22
 
 		.homeHead__item.homeHead__item_mobile
 			a(href="mobile.html").homeHead__name МОБИЛЬНАЯ МАСТЕРСКАЯ
@@ -40,18 +42,55 @@ block content
 			
 
 			// begin infoBox 
-			.infoBox
-
-				.infoBox__text.infoBox_rotor
-					.infoBox__title О нас 
-					|Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
-					.infoBox__name Lorem Ipsum.
-
-				.infoBox__media
-					.video__wrapper
-						img(src="img/vid1.jpg", alt="").video__preview
-						.video__play
+			.infoBox.infoBox_video
+				.video__wrapper
+					img(src="img/vid1.jpg", alt="").video__preview
+					.video__play
 				
+			// end infoBox 			
+		
+	// end white__line
+
+	// begin white__line
+	.white__line
+
+		.container_center
+			
+			.center__title Результаты в цифрах
+
+			// begin infoBox 
+			
+			.resultCounter
+
+				.grid.grid__3
+					.resultCounter__item
+						.resultCounter__caption Более
+							span.resultCounter__number 1 000
+						.resultCounter__captionsub Заключенных договоров
+
+					.resultCounter__item
+						.resultCounter__caption Более
+							span.resultCounter__number 15 000
+						.resultCounter__captionsub Выездов
+
+					.resultCounter__item
+						.resultCounter__caption 
+							span.resultCounter__number 100 000 
+							|рвд
+						.resultCounter__captionsub Изготовили на<br> выезде
+					.resultCounter__item
+						.resultCounter__caption 
+							span.resultCounter__number 6 
+							|лет
+						.resultCounter__captionsub Успешной работы
+
+					.resultCounter__item
+						.resultCounter__caption 
+							span.resultCounter__number 5 
+							|собственных
+						.resultCounter__captionsub Мобильных<br> мастерских
+
+
 			// end infoBox 			
 		
 	// end white__line

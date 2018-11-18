@@ -64,6 +64,14 @@
 		>div {		
 			width: 50%;
 		}
+		.resultCounter__item{
+			&:nth-child(1){
+				padding-left: 100px;
+			}
+			&:nth-child(2){
+				padding-right: 100px;
+			}
+		}
 	}
 	&__3 {
 		>div {
@@ -94,6 +102,20 @@
 		&__4 {
 			>div {
 				// width: 50%;
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.grid {
+		&__3 {
+			>div {
+				width: 100%;
+			}
+		}
+		&__2 {
+			>div {
+				width: 100%;
 			}
 		}
 	}

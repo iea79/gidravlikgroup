@@ -39,7 +39,9 @@
 		}
 	}
 	&__center {
-		overflow: hidden;
+		// overflow: hidden;
+	    float: right;
+		padding-right: 65px;
 		padding-top: 9px;
 	}
 	&__mobile {
@@ -133,6 +135,11 @@
 					opacity: .8;
 				}
 			}
+		}
+		&.fixed {
+		   	position: fixed !important;
+		   	top: 0 !important;
+		   	left: 0;
 		}
 	}
 	@media (max-width: 767px) {

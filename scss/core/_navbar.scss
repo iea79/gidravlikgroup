@@ -4,9 +4,68 @@
 	margin: 0;
 	padding: 0;
 	text-align: center;
+	&sub{
+		text-align: left;
+		list-style: none;
+		transition: .3s;
+		padding-left: 0;
+		@media (min-width: 768px) {    
+			height: 0;
+			overflow: hidden;
+			position: absolute;
+			padding: 0;
+			// box-shadow: 0.1em 0.1em .2em rgba(#000, 0.1);
+			// background-color: rgba(#fff, .3);
+		}
+		@media (max-width: 767px) {
+			margin: 1em 0;
+			display: block;
+			padding-left: 1em;
+		}
+		&__item{
+			padding-bottom: 8px;
+			// font-size: 0;
+			transition: .3s;
+		}
+		&__link{
+			text-decoration: none;
+			color: #091217;
+			&:after {
+				content: '';
+				display: block;
+				// margin-left: 50%;
+				width: 0;
+				border-bottom: 1px solid;
+				transition: all .3s;
+			}
+			&:hover {
+				&:after {
+					width: 100%;
+					// margin-left: 0;
+				}
+			}
+		}
+	}
 	&__item {
 		display: inline-block;
 		margin: 0 1.9em;
+		position: relative;
+		&:hover{
+			@media (min-width: 768px) {
+				.navbarsub{
+					height: auto;
+					
+					top: 100%;
+					left: 0;
+					padding-top: 8px;
+					// width: 100%;
+					&__item {
+						padding-bottom: 8px;
+						// font-size: initial;
+					}
+				}
+			}
+		}
 	}
 	&__link {
 		text-transform: uppercase;

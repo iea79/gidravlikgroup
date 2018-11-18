@@ -16,7 +16,7 @@
 		&:after {
 			content: '';
 			display: block;
-			border-bottom: 2px solid rgba(#fff, .8);
+			border-bottom: 1px solid rgba(#fff, .8);
 			margin-left: 2em;
 		}
 	}
@@ -25,6 +25,12 @@
 		padding-left: 2em;
 		margin-bottom: 1.9em;
 		width: 33.3%;
+	}
+	&__request{
+		text-align: right;
+		.footer__btn{
+			padding-bottom: 8px;
+		}
 	}
 	&__head {
 		text-transform: uppercase;
@@ -47,7 +53,7 @@
 		}
 	}
 	&__contact {
-		margin-bottom: 1.9em;
+		margin-bottom: 1.9em;	
 	}
 	&__tel {
 		color: #fff;

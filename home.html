@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="css/animate.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css"/>
-    <link href="css/style.css?0.1" rel="stylesheet"/>
+    <link href="css/style.css?0.2" rel="stylesheet"/>
     <script src="js/jquery.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/slick.min.js"></script>
@@ -31,10 +31,34 @@
         <div class="header__center">
           <!-- begin navbar -->
           <ul class="navbar">
-            <li class="navbar__item"><a class="navbar__link" href="#">О нас</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="#">Услуги</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="#">Каталог</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="#">Контакты</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#">КОМПАНИЯ</a>
+              <ul class="navbarsub"> 
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">Новости</a></li>
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">История</a></li>
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">Фотогалерея</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item"><a class="navbar__link" href="#">УСЛУГИ</a>
+              <ul class="navbarsub"> 
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">Новости</a></li>
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">История</a></li>
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">Фотогалерея</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item"><a class="navbar__link" href="#">КАТАЛОГ</a>
+              <ul class="navbarsub"> 
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">Новости</a></li>
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">История</a></li>
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">Фотогалерея</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item"><a class="navbar__link" href="#">КОНТАКТЫ</a>
+              <ul class="navbarsub"> 
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">Новости</a></li>
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">История</a></li>
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">Фотогалерея</a></li>
+              </ul>
+            </li>
           </ul>
           <!-- end navbar-->
         </div>
@@ -73,14 +97,41 @@
           <div class="container_center">
             <div class="page__title"><span class="txt__danger">Ремонт и изготовление РВД </span>в Москве и МО</div>
             <!-- begin infoBox -->
-            <div class="infoBox">
-              <div class="infoBox__text infoBox_rotor">
-                <div class="infoBox__title">О нас </div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
-                <div class="infoBox__name">Lorem Ipsum.</div>
+            <div class="infoBox infoBox_video">
+              <div class="video__wrapper"><img class="video__preview" src="img/vid1.jpg" alt=""/>
+                <div class="video__play"></div>
               </div>
-              <div class="infoBox__media">
-                <div class="video__wrapper"><img class="video__preview" src="img/vid1.jpg" alt=""/>
-                  <div class="video__play"></div>
+            </div>
+            <!-- end infoBox 			-->
+          </div>
+        </div>
+        <!-- end white__line-->
+        <!-- begin white__line-->
+        <div class="white__line">
+          <div class="container_center">
+            <div class="center__title">Результаты в цифрах</div>
+            <!-- begin infoBox -->
+            <div class="resultCounter">
+              <div class="grid grid__3">
+                <div class="resultCounter__item">
+                  <div class="resultCounter__caption">Более<span class="resultCounter__number">1 000</span></div>
+                  <div class="resultCounter__captionsub">Заключенных договоров</div>
+                </div>
+                <div class="resultCounter__item">
+                  <div class="resultCounter__caption">Более<span class="resultCounter__number">15 000</span></div>
+                  <div class="resultCounter__captionsub">Выездов</div>
+                </div>
+                <div class="resultCounter__item">
+                  <div class="resultCounter__caption"> <span class="resultCounter__number">100 000 </span>рвд</div>
+                  <div class="resultCounter__captionsub">Изготовили на<br> выезде</div>
+                </div>
+                <div class="resultCounter__item">
+                  <div class="resultCounter__caption"> <span class="resultCounter__number">6 </span>лет</div>
+                  <div class="resultCounter__captionsub">Успешной работы</div>
+                </div>
+                <div class="resultCounter__item">
+                  <div class="resultCounter__caption"> <span class="resultCounter__number">5 </span>собственных</div>
+                  <div class="resultCounter__captionsub">Мобильных<br> мастерских</div>
                 </div>
               </div>
             </div>
@@ -164,47 +215,61 @@
         <!-- begin footer__nav-->
         <div class="footer__nav">
           <div class="footer__col">
-            <div class="footer__head">Наши Товары</div>
+            <div class="footer__head">Компания</div>
             <div class="footer__list">
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Шланги высокого давления (РВД)</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Тефлоновые рукава</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Оборудование для РВД</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Термопластиковые рукава</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Быстроразъемные соединения (БРС)</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Диверторы</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Защита для РВД</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Камлоки</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Манометры и микрошланги</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Масла и смазки</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Навесное оборудование</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Трубные соединения</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Новости</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">История</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Фотогалерея</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Видео</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Партнёры</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Отзывы</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Вакансии</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Сотрудники</a></div>
             </div>
           </div>
           <div class="footer__col">
-            <div class="footer__head">Наши услуги</div>
+            <div class="footer__head">Услуги</div>
             <div class="footer__list">
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Стационарная мастерская</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Мобильные мастерские</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Ремонт РВД в мастерской</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Ремонт РВД с выездом на объект</a></div>
               <div class="footer__listItem"><a class="footer__navLink" href="#">Ремонт гидроцилиндров</a></div>
               <div class="footer__listItem"><a class="footer__navLink" href="#">Ремонт шлангов ГУР</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Изготовление шлангов ГУР</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Изготовление уплотнений, манжет</a></div>
               <div class="footer__listItem"><a class="footer__navLink" href="#">Изготовление гидравлических трубок</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Ремонт РВД</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Изготовление РВД</a></div>
               <div class="footer__listItem"><a class="footer__navLink" href="#">Заправка гидромолота азотом</a></div>
             </div>
           </div>
           <div class="footer__col">
-            <div class="footer__contact"><a class="footer__tel" href="tel:">8 (495) 256-06-02</a>Без выходных с 08 до 21</div>
+            <div class="footer__head">Каталог</div>
+            <div class="footer__list">
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Рукава высокого давления (РВД)</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Шланги для моек</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Защита для РВД</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Шаровые краны</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Быстроразъемные соединения</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Диверторы</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Трубные соединения</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Оборудование для РВД</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Манометры и микрошланги</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__nav">
+          <div class="footer__col">
+            <div class="footer__contact"><a class="footer__tel" href="tel:">8 (495) 256-06-02</a><a class="footer__navLink" href="mailto:">info@gidravlikgroup.ru</a></div>
+          </div>
+          <div class="footer__col">
             <div class="footer__contact"><a class="footer__tel" href="tel:">8 (800) 77-596-77</a>Бесплатный звонок по РФ</div>
-            <div class="footer__contact"><b>Головной офис: </b><br/><span>г. Москва, 32 км МКАД, внешняя сторона, АГМ «ТРАКТ», офис 201</span></div>
-            <div class="footer__contact"><b>Мастерская на севере  Москвы: </b><br/><span>Россия, МО, городской округ Мытищи, деревня Грибки, ул. Складская, д. 5, павильон 28</span></div>
-            <div class="footer__contact"><b>Мастерская на юге Москвы: </b><br/><span>Россия, г. Москва, 32 км МКАД, внешняя сторона, АГМ «ТРАКТ», бокс 22</span></div>
+          </div>
+          <div class="footer__col footer__request">
+            <div class="footer__btn">
+              <button class="btn">Заказать выезд на объект</button>
+            </div><a class="footer__navLink" href="contacts.html">Узнать адреса мастерских</a>
           </div>
         </div>
         <!-- end footer__nav-->
         <!-- begin footer__copy -->
-        <div class="footer__copy">© 2012-2017 ООО Гидравлик Групп</div>
+        <div class="footer__copy">© 2012-2019 ООО Гидравлик Групп</div>
         <!-- end footer__copy -->
       </div>
     </footer>

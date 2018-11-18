@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="css/animate.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css"/>
-    <link href="css/style.css?0.1" rel="stylesheet"/>
+    <link href="css/style.css?0.2" rel="stylesheet"/>
     <script src="js/jquery.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/slick.min.js"></script>
@@ -31,11 +31,41 @@
         <div class="header__center">
           <!-- begin navbar -->
           <ul class="navbar">
-            <li class="navbar__item"><a class="navbar__link" href="#">О нас</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="#">Услуги</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="#">Каталог</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="#">Контакты</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="#">Мобильная мастерская</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#">О нас</a>
+              <ul class="navbarsub"> 
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">Новости</a></li>
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">История</a></li>
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">Фотогалерея</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item"><a class="navbar__link" href="#">Услуги</a>
+              <ul class="navbarsub"> 
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">Новости</a></li>
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">История</a></li>
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">Фотогалерея</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item"><a class="navbar__link" href="#">Каталог</a>
+              <ul class="navbarsub"> 
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">Новости</a></li>
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">История</a></li>
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">Фотогалерея</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item"><a class="navbar__link" href="#">Контакты</a>
+              <ul class="navbarsub"> 
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">Новости</a></li>
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">История</a></li>
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">Фотогалерея</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item"><a class="navbar__link" href="#">Мобильная мастерская</a>
+              <ul class="navbarsub"> 
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">Новости</a></li>
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">История</a></li>
+                <li class="navbarsub__item"><a class="navbarsub__link" href="#">Фотогалерея</a></li>
+              </ul>
+            </li>
           </ul>
           <!-- end navbar-->
         </div>
@@ -55,24 +85,20 @@
         <div class="homeHead">
           <div class="homeHead__item homeHead__item_map">
             <div class="homeHead__vertical">
-              <div class="homeHead__title txt__danger">Ремонт РВД</div>
-              <div class="txt__danger">Изготовление РВД</div>в стационарной мастерской
+              <div class="homeHead__title"> <span class="txt__danger">Ремонт <br> изготовление</span><span class="txt__danger homeHead__titleBig"> РВД</span></div>
+              <div class="loader loader__first">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <div class="loader loader__last">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
             </div>
-            <div class="loader loader__first">
-              <div class="circle"></div>
-              <div class="circle"></div>
-              <div class="circle"></div>
-            </div>
-            <div class="loader loader__last">
-              <div class="circle"></div>
-              <div class="circle"></div>
-              <div class="circle"></div>
-            </div>
-            <div class="homeHead__sub">Рукава высокого давления и гидрокомпоненты</div>
           </div>
-          <div class="homeHead__item homeHead__item_mech">
-            <div class="homeHead__vertical">Без выходных <br>с 8 до 21-00</div>
-          </div>
+          <div class="homeHead__item homeHead__item_mech"></div>
         </div>
         <!-- end .homeHead -->
         <!-- begin white__line-->
@@ -81,63 +107,61 @@
             <div class="center__title">ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</div>
             <!-- begin simple__grid-->
             <div class="grid grid__3 simple__grid">
-              <div><img class="simple__img" src="img/dop1.jpg" alt=""/>
+              <div>
                 <div class="simple__item">
-                  <div class="simple__item_wrap">
+                  <div class="simple__item_wrap simple__item_wrapRed">
                     <div class="simple__name">Изготовление гидравлических трубок</div>
                   </div>
                 </div>
               </div>
-              <div><img class="simple__img" src="img/dop2.jpg" alt=""/>
+              <div>
                 <div class="simple__item">
-                  <div class="simple__item_wrap">
+                  <div class="simple__item_wrap simple__item_wrapBlack">
                     <div class="simple__name">Изготовление трубок ТНВД</div>
                   </div>
                 </div>
               </div>
-              <div><img class="simple__img" src="img/dop3.jpg" alt=""/>
+              <div>
                 <div class="simple__item">
-                  <div class="simple__item_wrap">
+                  <div class="simple__item_wrap simple__item_wrapGray">
                     <div class="simple__name"><span class="txt__danger">Ремонт шлангов ГУР</span></div>
                   </div>
                 </div>
               </div>
-              <div><img class="simple__img" src="img/dop4.jpg" alt=""/>
-                <div class="simple__item">
+              <div>
+                <div class="simple__item simple__item_wrapBlack">
                   <div class="simple__item_wrap">
                     <div class="simple__name">Ремонт гидроцилиндров</div>
                   </div>
                 </div>
               </div>
-              <div><img class="simple__img" src="img/dop5.jpg" alt=""/>
-                <div class="simple__item">
-                  <div class="simple__item_wrap"></div>
-                </div>
+              <div>
+                <div class="simple__item"><img class="simple__img" src="img/dop5.jpg" alt=""/></div>
               </div>
-              <div><img class="simple__img" src="img/dop6.jpg" alt=""/>
+              <div>
                 <div class="simple__item">
-                  <div class="simple__item_wrap">
+                  <div class="simple__item_wrap simple__item_wrapRed">
                     <div class="simple__name">Заправка гидромолота азотом</div>
                   </div>
                 </div>
               </div>
-              <div><img class="simple__img" src="img/dop7.jpg" alt=""/>
+              <div>
                 <div class="simple__item">
-                  <div class="simple__item_wrap">
+                  <div class="simple__item_wrap simple__item_wrapGray">
                     <div class="simple__name"><span class="txt__danger">Изготовление уплотнений</span></div>
                   </div>
                 </div>
               </div>
-              <div><img class="simple__img" src="img/dop8.jpg" alt=""/>
+              <div>
                 <div class="simple__item">
-                  <div class="simple__item_wrap">
+                  <div class="simple__item_wrap simple__item_wrapRed">
                     <div class="simple__name">Токарные работы</div>
                   </div>
                 </div>
               </div>
-              <div><img class="simple__img" src="img/dop9.jpg" alt=""/>
+              <div>
                 <div class="simple__item">
-                  <div class="simple__item_wrap">
+                  <div class="simple__item_wrap simple__item_wrapBlack">
                     <div class="simple__name">Сварочные работы</div>
                   </div>
                 </div>
@@ -240,46 +264,61 @@
         <!-- begin footer__nav-->
         <div class="footer__nav">
           <div class="footer__col">
-            <div class="footer__head">Наши Товары</div>
+            <div class="footer__head">Компания</div>
             <div class="footer__list">
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Шланги высокого давления (РВД)</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Тефлоновые рукава</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Оборудование для РВД</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Термопластиковые рукава</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Быстроразъемные соединения (БРС)</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Диверторы</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Защита для РВД</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Камлоки</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Манометры и микрошланги</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Масла и смазки</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Навесное оборудование</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Трубные соединения</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Новости</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">История</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Фотогалерея</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Видео</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Партнёры</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Отзывы</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Вакансии</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Сотрудники</a></div>
             </div>
           </div>
           <div class="footer__col">
-            <div class="footer__head">Наши услуги</div>
+            <div class="footer__head">Услуги</div>
             <div class="footer__list">
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Стационарная мастерская</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Мобильные мастерские</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Ремонт РВД в мастерской</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Ремонт РВД с выездом на объект</a></div>
               <div class="footer__listItem"><a class="footer__navLink" href="#">Ремонт гидроцилиндров</a></div>
               <div class="footer__listItem"><a class="footer__navLink" href="#">Ремонт шлангов ГУР</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Изготовление шлангов ГУР</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Изготовление уплотнений, манжет</a></div>
               <div class="footer__listItem"><a class="footer__navLink" href="#">Изготовление гидравлических трубок</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Ремонт РВД</a></div>
-              <div class="footer__listItem"><a class="footer__navLink" href="#">Изготовление РВД</a></div>
               <div class="footer__listItem"><a class="footer__navLink" href="#">Заправка гидромолота азотом</a></div>
             </div>
           </div>
           <div class="footer__col">
-            <div class="footer__contact"><a class="footer__tel" href="tel:">8 (495) 256-06-02</a>Без выходных с 08 до 21</div>
+            <div class="footer__head">Каталог</div>
+            <div class="footer__list">
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Рукава высокого давления (РВД)</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Шланги для моек</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Защита для РВД</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Шаровые краны</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Быстроразъемные соединения</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Диверторы</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Трубные соединения</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Оборудование для РВД</a></div>
+              <div class="footer__listItem"><a class="footer__navLink" href="#">Манометры и микрошланги</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__nav">
+          <div class="footer__col">
+            <div class="footer__contact"><a class="footer__tel" href="tel:">8 (495) 256-06-02</a><a class="footer__navLink" href="mailto:">info@gidravlikgroup.ru</a></div>
+          </div>
+          <div class="footer__col">
             <div class="footer__contact"><a class="footer__tel" href="tel:">8 (800) 77-596-77</a>Бесплатный звонок по РФ</div>
-            <div class="footer__contact"><b>Мастерская на севере  Москвы: </b><br/><span>Россия, МО, городской округ Мытищи, деревня Грибки, ул. Складская, д. 5, павильон 28</span></div>
-            <div class="footer__contact"><b>Мастерская на юге Москвы: </b><br/><span>Россия, г. Москва, 32 км МКАД, внешняя сторона, АГМ «ТРАКТ», бокс 22</span></div>
+          </div>
+          <div class="footer__col footer__request">
+            <div class="footer__btn">
+              <button class="btn">Заказать выезд на объект</button>
+            </div><a class="footer__navLink" href="contacts.html">Узнать адреса мастерских</a>
           </div>
         </div>
         <!-- end footer__nav-->
         <!-- begin footer__copy -->
-        <div class="footer__copy">© 2012-2017 ООО Гидравлик Групп</div>
+        <div class="footer__copy">© 2012-2019 ООО Гидравлик Групп</div>
         <!-- end footer__copy -->
       </div>
     </footer>

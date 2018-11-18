@@ -5,6 +5,11 @@
 	position: relative;
 	@extend %clear_a;
 	// max-width: 96%;
+	&_video {
+		border-top: none;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 	&_rotor {
 		background-image: url(../img/info1.png);
 		background-position: top left;

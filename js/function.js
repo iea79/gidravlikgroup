@@ -60,15 +60,7 @@ $(document).ready(function() {
 
 	// Stiky menu // Липкое меню. При прокрутке к элементу #header добавляется класс .stiky который и стилизуем
     // $(document).ready(function(){
-    //     var HeaderTop = $('#header').offset().top;
-        
-    //     $(window).scroll(function(){
-    //             if( $(window).scrollTop() > HeaderTop ) {
-    //                     $('#header').addClass('stiky');
-    //             } else {
-    //                     $('#header').removeClass('stiky');
-    //             }
-    //     });
+
     // });
    	// setGridMatch($('[data-grid-match] .grid__item'));
    	gridMatch();
@@ -108,6 +100,8 @@ $(document).ready(function() {
         $('#'+id+'').addClass('active');
     });
 
+    stiky();
+
 });
 
 $(window).resize(function(event) {
@@ -131,6 +125,27 @@ function gridMatch() {
    	$('[data-grid-match] .grid__item').matchHeight({
    		byRow: true,
    	});
+}
+
+function stiky() {
+    var Header = $('.header');
+    var HeaderTop = Header.offset().top;
+    var wrap = $('.wrapper');
+    var HeaderStiky = $('.header').hasClass('stiky');
+    
+    $(window).scroll(function(){
+        if( $(window).scrollTop() > HeaderTop ) {
+            $('.header_gray').addClass('stiky');
+            if (HeaderStiky) {
+                wrap.css('paddingTop', $('.header').innerHeight());
+            }
+        } else {
+            $('.header_gray').removeClass('stiky');
+            if (HeaderStiky) {
+                wrap.removeAttr('style');
+            }
+        }
+    });
 }
 
 // function setGridMatch(columns) {
@@ -188,15 +203,15 @@ function init() {
         }, {
             iconLayout: 'default#image',
             iconImageHref: 'img/marker.png',
-            iconImageSize: [48, 76],
-            iconImageOffset: [-24, -48],
+            iconImageSize: [24, 38],
+            iconImageOffset: [-24, -24],
         }))
         .add(new ymaps.Placemark([55.57271429234571,37.6186468756714], {
             balloonContent: 'Россия, Москва, МКАД, 32-й километр, внешняя сторона, с1, АГМ «ТРАКТ», бокс 22'
         }, {
             iconLayout: 'default#image',
             iconImageHref: 'img/marker.png',
-            iconImageSize: [48, 76],
-            iconImageOffset: [-24, -48],
+            iconImageSize: [24, 38],
+            iconImageOffset: [-24, -24],
         }));
 }

@@ -13,22 +13,21 @@ block content
 	.homeHead
 		.homeHead__item.homeHead__item_map
 			.homeHead__vertical
-				.homeHead__title.txt__danger Ремонт РВД
-				.txt__danger Изготовление РВД
-				|в стационарной мастерской
-			.loader.loader__first
-				.circle
-				.circle
-				.circle
-			.loader.loader__last
-				.circle
-				.circle
-				.circle
-
-			.homeHead__sub Рукава высокого давления и гидрокомпоненты
+				.homeHead__title 
+					span.txt__danger Ремонт <br> изготовление
+					span.txt__danger.homeHead__titleBig  РВД
+				.loader.loader__first
+					.circle
+					.circle
+					.circle
+					//- .loader__name Россия, МО, городской округ Мытищи <br>деревня Грибки, ул. Складская, дом 5, павилион 28
+				.loader.loader__last
+					.circle
+					.circle
+					.circle
+					//- .loader__name Россия, Москва, МКАД, 32-й киллометр, <br>внешняя сторона, с1, АГМ "ТРАКТ", бокс 22
 
 		.homeHead__item.homeHead__item_mech
-			.homeHead__vertical Без выходных <br>с 8 до 21-00
 		
 	// end .homeHead 
 
@@ -43,50 +42,42 @@ block content
 			// begin simple__grid
 			.grid.grid__3.simple__grid
 				div
-					img.simple__img(src="img/dop1.jpg", alt="")
 					.simple__item
-						.simple__item_wrap
+						.simple__item_wrap.simple__item_wrapRed
 							.simple__name Изготовление гидравлических трубок
 				div
-					img.simple__img(src="img/dop2.jpg", alt="")
 					.simple__item
-						.simple__item_wrap
+						.simple__item_wrap.simple__item_wrapBlack
 							.simple__name Изготовление трубок ТНВД
 				div
-					img.simple__img(src="img/dop3.jpg", alt="")
 					.simple__item
-						.simple__item_wrap
+						.simple__item_wrap.simple__item_wrapGray
 							.simple__name
 								span.txt__danger Ремонт шлангов ГУР
 				div
-					img.simple__img(src="img/dop4.jpg", alt="")
-					.simple__item
+					.simple__item.simple__item_wrapBlack
 						.simple__item_wrap
 							.simple__name Ремонт гидроцилиндров
 				div
-					img.simple__img(src="img/dop5.jpg", alt="")
 					.simple__item
-						.simple__item_wrap
+						img(src="img/dop5.jpg" alt="").simple__img
+
 				div
-					img.simple__img(src="img/dop6.jpg", alt="")
 					.simple__item
-						.simple__item_wrap
+						.simple__item_wrap.simple__item_wrapRed
 							.simple__name Заправка гидромолота азотом
 				div
-					img.simple__img(src="img/dop7.jpg", alt="")
 					.simple__item
-						.simple__item_wrap
+						.simple__item_wrap.simple__item_wrapGray
 							.simple__name
 								span.txt__danger Изготовление уплотнений
 				div
-					img.simple__img(src="img/dop8.jpg", alt="")
 					.simple__item
-						.simple__item_wrap
+						.simple__item_wrap.simple__item_wrapRed
 							.simple__name Токарные работы
 				div
-					img.simple__img(src="img/dop9.jpg", alt="")
 					.simple__item
-						.simple__item_wrap
+						.simple__item_wrap.simple__item_wrapBlack
 							.simple__name Сварочные работы
 
 			// end simple__grid
