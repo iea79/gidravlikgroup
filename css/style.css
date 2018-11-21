@@ -1588,7 +1588,7 @@ hr {
     position: relative; }
     .homeHead__item_static {
       width: 33.7%;
-      background: url(../img/headMap2.png) bottom 1.2em right 5em no-repeat;
+      background: url(../img/headMap.png) bottom 1.2em right 5em no-repeat;
       background-size: 29em; }
       .homeHead__item_static .homeHead__name {
         border: 2px solid rgba(0, 0, 0, 0.4);
@@ -1616,7 +1616,7 @@ hr {
       background-color: #f0eff4;
       background-size: 100% 100%;
       padding: 18.1em 4.4em 11.3em;
-      background: url(../img/headMap2.png) right 4.5em top 5em no-repeat;
+      background: url(../img/headMap.png) right 4.5em top 5em no-repeat;
       background-size: auto 80%;
       margin-right: 0;
       background-color: #f0eff4; }
